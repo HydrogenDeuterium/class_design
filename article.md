@@ -28,8 +28,6 @@
         style="position:relative; "
         width="206"
 />
-<!--<p style="font-size:16pt;  text-align:center; ">-->
-<!--    <span style="font-size:22pt; font-weight:bold">&#xa0;</span></p>-->
 
 <p style="font-size:16pt;  text-align:center; ">
     <span style="font-size:22pt; font-weight:bold">《化工原理》课程设计</span></p>
