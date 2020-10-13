@@ -4,3 +4,4 @@
 export*
 commit.json
 *.docx
+*.xlsx
