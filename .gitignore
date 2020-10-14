@@ -5,3 +5,4 @@ export*
 commit.json
 *.docx
 *.xlsx
+article.assets/

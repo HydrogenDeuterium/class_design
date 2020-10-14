@@ -255,12 +255,17 @@ $$
 <div STYLE="page-break-after: always;"></div>
 ## 六、全塔热量衡算
 
+![图片5](D:\OneDrive\大学文档\课程\化原\课设\article.assets\图片3.svg)
 
 
 
+热量衡算，如上图所示。条件如下：
 
+1. 泡点进料，泡点回流
+2. 以$0^\circ C$时常温下的液态混合物状态作为基准
 
+全塔热量衡算如下：$\mathbf{H}_{\mathbf{F}}+\mathbf{Q}_{\mathbf{F}}+\mathbf{Q}_{\mathbf{R}}=\mathbf{Q}_{\mathbf{C}}+\mathbf{H}_{\mathbf{D}}+\mathbf{H}_{\mathbf{w}}$ 
 
-
+### 6.1 进料焓$\mathrm{H_F}$的计算
 
 TODO:删除敏感文件
