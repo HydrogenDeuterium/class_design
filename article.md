@@ -262,10 +262,19 @@ $$
 热量衡算，如上图所示。条件如下：
 
 1. 泡点进料，泡点回流
-2. 以$0^\circ C$时常温下的液态混合物状态作为基准
+2. 以$0^\circ C$时常温下的液态混合物状态作为基准态
 
-全塔热量衡算如下：$\mathbf{H}_{\mathbf{F}}+\mathbf{Q}_{\mathbf{F}}+\mathbf{Q}_{\mathbf{R}}=\mathbf{Q}_{\mathbf{C}}+\mathbf{H}_{\mathbf{D}}+\mathbf{H}_{\mathbf{w}}$ 
+全塔热量衡算如下：$\mathrm{H}_{\mathrm{F}}+\mathrm{Q}_{\mathrm{F}}+\mathrm{Q}_{\mathrm{R}}=\mathrm{Q}_{\mathrm{C}}+\mathrm{H}_{\mathrm{D}}+\mathrm{H}_{\mathrm{w}}$ 
 
 ### 6.1 进料焓$\mathrm{H_F}$的计算
 
-TODO:删除敏感文件
+设进料温度为室温$20^\circ C$，则定性温度为$（20+0）/2=10^\circ C$，查表[^7]可知，苯与氯苯的比热容分别为$132.51$，$149.43kJ/(kmol·^\circ C)$。
+
+则，其平均比热容$C_{PFm}$为：$132.51\times0.728+149.43\times(1-0.728)=137.71kJ/(kmol·^\circ C)$
+
+因此，进料液焓$H_F=62.27kmol/h\times137.11kJ/(kmol·^\circ C)\times(20-0)^\circ C \\=1.7\times10^5kJ/h$
+
+[^7]:本文3.6节
+
+### 6.2 预热器供热$\mathrm{Q_F}$的计算
+
