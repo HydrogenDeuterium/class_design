@@ -7,3 +7,5 @@ commit.json
 *.xlsx
 article.assets/
 *.tmp
+demo/article_demo_*.pdf
+.vscode/settings.json
