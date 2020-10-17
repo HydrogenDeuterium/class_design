@@ -6,3 +6,4 @@ commit.json
 *.docx
 *.xlsx
 article.assets/
+*.tmp
