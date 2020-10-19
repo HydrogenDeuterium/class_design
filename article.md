@@ -262,7 +262,7 @@ $$
 
 $\mathrm{H}_{\mathrm{F}}+\mathrm{Q}_{\mathrm{F}}+\mathrm{Q}_{\mathrm{R}}=\mathrm{Q}_{\mathrm{C}}+\mathrm{H}_{\mathrm{D}}+\mathrm{H}_{\mathrm{w}}$
 
-### 6.1 进料焓$\mathrm{H_F}$的计算
+### 6.1 进料焓 $\mathrm{H_F}$ 的计算
 
 设进料温度为室温$20^\circ C$，则定性温度为$（20+0）/2=10^\circ C$，查表[^7]可知，苯与氯苯的比热容分别为$132.51$，$149.43kJ/(kmol·^\circ C)$。
 
