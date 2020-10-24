@@ -7,4 +7,5 @@ commit.json
 *.xlsx
 article.assets/
 *.tmp
+temp
 .vscode/settings.json
