@@ -6,12 +6,12 @@ pA:=Exp[15.9008-2788.51/(T-52.36)];
 pB:=Exp[16.6076-3295.12/(T-55.6)];
 xA=0.728;xB=1-xA;atm=760;
 root=FindRoot[xA pA+xB pB==atm,{T,273.15}];
-T-273.15/.root
+Print[T-273.15/.root]
 
 
 (* ::Input:: *)
 bubblePoint[xA_]:=FindRoot[xA pA+(1-xA) pB==atm,{T,273.15}];
-(T-273.15)/.bubblePoint[0.993]
+Print[(T-273.15)/.bubblePoint[0.993]]
 
 
 (* ::Input:: *)
@@ -21,7 +21,7 @@ fCpA=Interpolation[CpA,InterpolationOrder->1];
 fCpB=Interpolation[CpB,InterpolationOrder->1];
 xA=0.993;xB=1-xA;
 fCpm[T_]:=xA*fCpA[T]+xB*fCpB[T];
-fCpm[40.18]
+Print[fCpm[40.18]]
 
 (* ::Input:: *)
 qianreA={{10,34080.6},{20,33678.6},{30,33251.6},{40,32807.8},{50,32334.7},{60,31844.8},{70,31325.6},{80,30785.5},{90,30220.3},{100,29630.},{110,29014.5},{120,28369.8},{130,27691.5},{140,26988.1}};
@@ -30,4 +30,4 @@ fqrA=Interpolation[qianreA,InterpolationOrder->1];
 fqrB=Interpolation[qianreB,InterpolationOrder->1];
 xA=0.993;xB=1-xA;
 fqrm[T_]:=xA*fqrA[T]+xB*fqrB[T];
-fqrm[80.36]
+Print[fqrm[80.36]]
