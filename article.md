@@ -272,7 +272,8 @@ $\mathrm{H}_{\mathrm{F}}+\mathrm{Q}_{\mathrm{F}}+\mathrm{Q}_{\mathrm{R}}=\mathrm
 
 $$
 x_A=\frac{\mathrm{P}-p^0_B}{p^0_A-p^0_B}\\
-y_A=p^0_A\times x_A/\mathrm{P}
+\quad \\
+y_A=\frac{p^0_A}{\mathrm{P}}\times x_A
 $$
 
 | 温度 | $p^0_A$ | $p^0_B$ | x   | y   |

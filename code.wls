@@ -31,3 +31,18 @@ fqrB=Interpolation[qianreB,InterpolationOrder->1];
 xA=0.993;xB=1-xA;
 fqrm[T_]:=xA*fqrA[T]+xB*fqrB[T];
 Print[fqrm[80.36]]
+
+(* ::Input:: *)
+Clear["T"];
+temptures={80,90,100,110,120,130,131.8}+273.15;
+fp0A[T_]:=N[Exp[15.9008-2788.51/(T-52.36)],4];
+fp0B[T_]:=N[Exp[16.6076-3295.12/(T-55.6)],4];
+xA=0.993;xB=1-xA;
+x[T_]:=N[(atm-fp0B[T])/(fp0A[T]-fp0B[T]),4];
+y[T_]:=N[fp0A[T]/atm*xA,4];
+ret[T_]:={T-273.15,fp0A[T],fp0B[T],x[T],y[T]};
+data=Table[ret[T],{T,temptures}]
+Print[data]
+Export["temp.tsv",data]
+Print[fp0A[80+273.15]]
+
