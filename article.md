@@ -478,11 +478,17 @@ fqrm[T_]:=xA*fqrA[T]+xB*fqrB[T];
 fqrm[80.36]
 ```
 
-解得平均汽化潜热为：$30816.80\mathrm{kJ/mol}$。
+解得平均汽化潜热：$\gamma_{V_m}=30816.80\mathrm{kJ/kmol}$。
 
 ### 7.4.2 塔顶蒸汽冷凝负荷
 
-由前所述，塔顶产品流量为45.61kmol/h，回流比
+由前所述，塔顶产品流量为45.61kmol/h，回流比为0.492，因此：
+
+$$
+Q_c=V\times\gamma_{V_m}=(R+1)D\times\gamma_{V_m}\\
+   =(0.492+1)\times45.61kmol/h\times30816.80kJ/kmol\\
+   =2.0970\times10^6 kJ/h
+$$
 
 <div STYLE="page-break-after: always;"></div>
 
