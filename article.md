@@ -370,49 +370,50 @@ $$
 使用如下的 Mathematica 代码求解进料泡点温度：
 
 ```WolfarmLanguage
-pA := Exp[15.9008 - 2788.51/(T - 52.36)];
-pB := Exp[16.6076 - 3295.12/(T - 55.6)];
-xA = 0.728; xB = 1 - xA; atm = 760;
-root = FindRoot[xA pA + xB pB == atm, {T, 273.15}];
-T - 273.15 /. root
-Out[1] = 86.5768
+pA:=Exp[15.9008-2788.51/(T-52.36)];
+pB:=Exp[16.0676-3295.12/(T-55.6)];
+xA=0.728;xB=1-xA;atm=760;
+root=FindRoot[xA pA+xB pB==atm,{T,273.15}];
+Print[T-273.15/.root]
 ```
 
-可以得到，$t_{bF}=86.58℃$.
+可以得到，$t_{bF}=88.23℃$.
 
 ### 平均比热容
 
-初温：$20℃$ ，末温：$86.58℃$；故定性温度：$(20+86.58)/2=53.29℃$
+初温：$20℃$ ，末温：$88.23℃$；故定性温度：$(20+88.23)/2=54.12℃$
 由表[^chart_5]知：
 
 苯在$50℃$时比热容为$140.19 kJ/(kmol·℃)$；$60℃$时的比热容为$142.38 kJ/( kmol·℃)$，通过插值计算得苯在$53.29℃$时的比热容为：
 
 $$
-C_{PFA}=C_{P50}+\frac{C_{P60}-C_{P50}}{60-50}(53.29-50)\\
-=140.19+\frac{142.38-140.19}{60-50}\times3.29\\
-=140.91(kJ/(kmol·℃))
+C_{PFA}=C_{P50}+\frac{C_{P60}-C_{P50}}{60-50}(54.12-50)\\
+=140.19+\frac{142.38-140.19}{60-50}\times4.12\\
+=141.52(kJ/(kmol·℃))
 $$
 
 氯苯在$50℃$时比热容为$153.57kJ/(kmol·℃)$；$60℃$时的比热容为$154.79kJ/( kmol·℃)$，通过插值计算得氯苯在$53.29℃$时的比热容为：
 
 $$
-C_{PFB}=C_{P50}+\frac{C_{P60}-C_{P50}}{60-50}(53.29-50)\\
-=153.57+\frac{154.79-153.57}{60-50}\times3.29\\
-=153.97(kJ/(kmol·℃))
+C_{PFB}=C_{P50}+\frac{C_{P60}-C_{P50}}{60-50}(54.12-50)\\
+=153.57+\frac{154.79-153.57}{60-50}\times4.12\\
+=154.07(kJ/(kmol·℃))
 $$
 
 故，混合物原料的比热容为：
 $$
 C_{PFm}=x_A C_{PFA}+x_B C_{PFB}\\
-=144.46(kJ/(kmol·℃))
+=0.728\times141.52+(1-0.7280)\times154.07\\
+=144.93(kJ/(kmol·℃))
 $$
 [^6]:卢焕章等. 石油化工基础数据手册[M]. 化学工业出版社,1032,1036
 [^chart_5]:3.6 组分的比热容
 
 因此，预热器供热量$Q_F=F\times C_{PFm}\times \Delta T$
 $$
-=62.27kmol/h\times 144.46(kJ/(kmol·℃))\times66.58℃\\
-=598922kJ/h=5.9892\times 10^5kJ/h
+=62.27kmol/h\times 144.93(kJ/(kmol·℃))\times68.23℃\\
+=615761kJ/h\\
+=6.1576\times 10^5kJ/h
 $$
 
 ## 7.3塔顶产品焓的计算
@@ -428,11 +429,11 @@ bubblePoint[xA_] := FindRoot[xA pA + (1 - xA) pB == atm, {T, 273.15}];
 (T - 273.15) /. bubblePoint[0.993]
 ```
 
-可以解得，$t_bD=80.36℃$。
+解得$t_bD=80.29℃$。
 
 ### 平均比热容
 
-定性温度为$(80.36+0)/2=40.18℃$.
+定性温度为$(80.29+0)/2=40.14℃$.
 
 使用如下的代码计算，其中 CpA 和 CpB 为 3.6 节中各组分比热容与温度的关系：
 
@@ -449,24 +450,25 @@ fCpA=Interpolation[CpA,InterpolationOrder->1];
 fCpB=Interpolation[CpB,InterpolationOrder->1];
 xA=0.993;xB=1-xA;
 fCpm[T_]:=xA*fCpA[T]+xB*fCpB[T];
-fCpm[40.18]
+fCpm[40.14]
 ```
 
-可得，$C_{PDm}=138.15kJ/(kmol\cdot℃)$。
+可得，$C_{PDm}=138.14kJ/(kmol\cdot℃)$。
 
 ### 塔顶产品焓
 
 $$
 H_D=D\times C_{PDm}\times \Delta t_{bd}\\
-=45.61kmol/h \times 138.15\mathrm{kJ/(kmol\cdot℃)} \times 80.36\mathrm{℃}\\
-=506350\mathrm{kJ/h}=5.064\times 10^5 \mathrm{kJ/h}
+=45.61kmol/h \times 138.14\mathrm{kJ/(kmol\cdot℃)} \times 80.29\mathrm{℃}\\
+=505872\mathrm{kJ/h}\\
+=5.059\times 10^5 \mathrm{kJ/h}
 $$
 
 ## 7.4 全凝器冷凝负荷$Q_C$的计算
 
 ### 7.4.1 塔顶蒸汽平均冷凝潜热
 
-塔顶产品为泡点出料，其温度为$80.36^\circ C$.使用如下的代码来计算其汽化潜热：
+塔顶产品为泡点出料，其温度为$80.29^\circ C$.使用如下的代码来计算其汽化潜热：
 
 ```Mathematica
 qianreA={{10,34080.6},{20,33678.6},{30,33251.6},{40,32807.8},{50,32334.7},{60,31844.8},{70,31325.6},{80,30785.5},{90,30220.3},{100,29630.},{110,29014.5},{120,28369.8},{130,27691.5},{140,26988.1}};
@@ -475,10 +477,10 @@ fqrA=Interpolation[qianreA,InterpolationOrder->1];
 fqrB=Interpolation[qianreB,InterpolationOrder->1];
 xA=0.993;xB=1-xA;
 fqrm[T_]:=xA*fqrA[T]+xB*fqrB[T];
-fqrm[80.36]
+fqrm[80.29]
 ```
 
-解得平均汽化潜热：$\gamma_{V_m}=30816.80\mathrm{kJ/kmol}$。
+解得平均汽化潜热：$\gamma_{V_m}=30820.80\mathrm{kJ/kmol}$。
 
 ### 7.4.2 塔顶蒸汽冷凝负荷
 
@@ -486,8 +488,8 @@ fqrm[80.36]
 
 $$
 Q_c=V\times\gamma_{V_m}=(R+1)D\times\gamma_{V_m}\\
-   =(0.492+1)\times45.61kmol/h\times30816.80kJ/kmol\\
-   =2.0970\times10^6 kJ/h
+   =(0.492+1)\times45.61kmol/h\times30820.80kJ/kmol\\
+   =2.0974\times10^6 kJ/h
 $$
 
 ## 7.5 塔底产品焓$H_W$的计算
@@ -499,14 +501,12 @@ $$
 因此，根据5.1部分计算，已知塔底产品组成$x_W=0.00288$。根据苯和氯苯的Antoine方程，可求出塔底组成下的泡点温度$t_{bW}$。
 
 使用如下的代码进行求解：
+
 ```Mathematica
-pA:=Exp[15.9008-2788.51/(T-52.36)];
-pB:=Exp[16.6076-3295.12/(T-55.6)];
-xA=0.00288;xB=1-xA;atm=760;
-root=FindRoot[xA pA+xB pB==atm,{T,273.15}];
-Print[T-273.15/.root]
+(T - 273.15) /. bubblePoint[0.00288]
 ```
-解得塔底温度为$112.67^\circ C$
+
+解得塔底温度为$131.414^\circ C$。
 
 <div STYLE="page-break-after: always;"></div>
 
