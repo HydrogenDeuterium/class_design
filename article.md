@@ -247,18 +247,7 @@ $$
 - 塔底质量流量$W'=1875kg/h$，合摩尔流量$1875/16.67kmol/h$
 
 <div STYLE="page-break-after: always;"></div>
-# 六、全塔热量衡算
 
-![图片5](D:\OneDrive\大学文档\课程\化原\课设\article.assets)
-
-热量衡算，如上图所示。条件如下：
-
-1. 泡点进料，泡点回流
-2. 以$0℃$时常温下的液态混合物状态作为基准态
-
-全塔热量衡算如下：
-
-$\mathrm{H}_{\mathrm{F}}+\mathrm{Q}_{\mathrm{F}}+\mathrm{Q}_{\mathrm{R}}=\mathrm{Q}_{\mathrm{C}}+\mathrm{H}_{\mathrm{D}}+\mathrm{H}_{\mathrm{w}}$
 
 # 六 塔板数的确定
 
@@ -321,6 +310,19 @@ $$
 ### 6.2.1 全塔效率$\mathrm{E_T}$
 
 选用Drickamer 和Bradford的全塔效率ET与液体粘度μL关联式：ET=0.17-0.616lgμm。该式适用于液相黏度0.07~1.4 mPa·s的烃类物系，式中μm为全塔平均温度下以进料组成表示的平均黏度。塔的平均温度为（80.36+131.41）/2=105.94°C（取塔顶、塔底温度的算术平均值），此平均温度下：
+
+# 七、全塔热量衡算
+
+![图片5](D:\OneDrive\大学文档\课程\化原\课设\article.assets)
+
+热量衡算，如上图所示。条件如下：
+
+1. 泡点进料，泡点回流
+2. 以$0℃$时常温下的液态混合物状态作为基准态
+
+全塔热量衡算如下：
+
+$\mathrm{H}_{\mathrm{F}}+\mathrm{Q}_{\mathrm{F}}+\mathrm{Q}_{\mathrm{R}}=\mathrm{Q}_{\mathrm{C}}+\mathrm{H}_{\mathrm{D}}+\mathrm{H}_{\mathrm{w}}$
 
 ## 7.1 进料焓 $\mathrm{H_F}$ 的计算
 
