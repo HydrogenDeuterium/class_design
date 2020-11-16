@@ -529,6 +529,30 @@ Print[fCpm[65.71]]
 
 塔底产品焓$H_W=16.67\times156.4\times131.41=3.43\times10^6 kJ/h$
 
+## 7.6 再沸器热负荷$Q_R$的计算
+
+### 7.6.1 塔底产品平均气化潜热
+
+由7.5知，塔底产品的泡点温度为$131.41^\circ C$。
+
+使用如下的代码计算汽化潜热：
+
+```Mathematica
+xA=0.00288;xB=1-xA;
+fqrm[T_]:=xA*fqrA[T]+xB*fqrB[T];
+Print[fqrm[131.41]]
+```
+
+计算得到，汽化潜热$\gamma_{V_m}=35350kJ/mol$。
+
+### 7.6.2 再沸器热负荷
+
+如前述，泡点进料，因此$q=1$。
+再沸器气化量$V'=V-(1-q)F=V=(R+1)D=1.604\times45.61=73.16kmol/h$
+再沸器热负荷$\mathrm{Q_R}=\gamma_{V_m}V'=2.59\times10^6 kJ/h$
+
 <div STYLE="page-break-after: always;"></div>
+
+
 
 ## 参考文献
