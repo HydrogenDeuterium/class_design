@@ -506,7 +506,24 @@ $$
 (T - 273.15) /. bubblePoint[0.00288]
 ```
 
-解得塔底温度为$131.414^\circ C$。
+解得塔底温度为$131.41^\circ C$。
+
+### 7.5.2 平均比热容
+
+定性温度为
+使用如下的代码计算：
+
+```Mathematica
+xA=0.00288;xB=1-xA;
+fCpm[T_]:=xA*fCpA[T]+xB*fCpB[T];
+Print[fCpm[65.71]]
+```
+
+可得平均比热容为$156.4kJ·mol^{-1}·^\circ C^{-1}$.
+
+### 7.5.3 塔底产品焓
+
+摩尔流量：
 
 <div STYLE="page-break-after: always;"></div>
 
