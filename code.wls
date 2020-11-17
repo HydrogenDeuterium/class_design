@@ -5,6 +5,7 @@
 (* 进料泡点 *)
 pA:=Exp[15.9008-2788.51/(T-52.36)];
 pB:=Exp[16.0676-3295.12/(T-55.6)];
+(* 单位：毫米汞柱 *)
 xA=0.728;xB=1-xA;atm=760;
 root=FindRoot[xA pA+xB pB==atm,{T,273.15}];
 Print[T-273.15/.root]
@@ -54,4 +55,6 @@ xA=0.00288;xB=1-xA;
 fqrm[T_]:=xA*fqrA[T]+xB*fqrB[T];
 Print[fqrm[131.41]]
 
-
+(* ::Input:: *)
+(* 平均分子量 *)
+MeanMmass[x_]:=(x*78.11+(1-x)*112.61)
