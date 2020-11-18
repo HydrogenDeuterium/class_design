@@ -658,4 +658,26 @@ sigmaMix[A_,B_,x_]:=A*B/(A*(1-x)+B*x)
 
 可得平均表面张力为$21.26 \mathrm{mN/m}$
 
+#### 8.1.7 平均粘度
+
+使用如下代码计算
+
+```Mathematica
+{A80,B80}={0.306,0.426}
+{A88,B88}={0.279,0.394}
+muMix[A_,B_,x_]:=A*x+B*(1-x)
+(muMix[A80,B80,0.987]+muMix[A88,B88,0.728])/2
+```
+
+可得平均粘度为$0.309 \mathrm{mPa\cdot s}$
+
+### 8.2 精馏段气液负荷
+
+- 气相摩尔流率：$V=(R+1)D=1.492\times45.61=68.05\mathrm{kmol/h}$
+- 气相体积流率：$\frac{VM_{V,m}}{\rho_{V,m}}=\frac{68.05\times82.49}{3.01}=1875\mathrm{m^3/h}=0.52\mathrm{m^3/s}$
+- 液相摩尔流率：$L=RD=0.492\times45.61=22.44\mathrm{kmol/h}$
+- 液相体积流率：$\frac{VM_{L,m}}{\rho_{L,m}}=\frac{22.44\times79.56}{843.0}=2.196\mathrm{m^3/h}=0.0006100\mathrm{m^3/s}$
+
+### 
+
 ## 参考文献
