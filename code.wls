@@ -8,13 +8,13 @@ pB:=Exp[16.0676-3295.12/(T-55.6)];
 (* 单位：毫米汞柱 *)
 xA=0.728;xB=1-xA;atm=760;
 root=FindRoot[xA pA+xB pB==atm,{T,273.15}];
-Print[T-273.15/.root]
+T-273.15/.root
 (* 88.2284 *)
 
 (* ::Input:: *)
 (* 塔顶泡点 *)
 bubblePoint[xA_]:=FindRoot[xA pA+(1-xA) pB==atm,{T,273.15}];
-Print[(T-273.15)/.bubblePoint[0.993]]
+(T-273.15)/.bubblePoint[0.993]
 (* 80.2855 *)
 
 (* ::Input:: *)
@@ -31,13 +31,13 @@ fCpA=Interpolation[CpA,InterpolationOrder->1];
 fCpB=Interpolation[CpB,InterpolationOrder->1];
 xA=0.993;xB=1-xA;
 fCpm[T_]:=xA*fCpA[T]+xB*fCpB[T];
-Print[fCpm[40.14]]
+fCpm[40.14]
 
 (* ::Input:: *)
 (* 塔底平均比热容 *)
 xA=0.00288;xB=1-xA;
 fCpm[T_]:=xA*fCpA[T]+xB*fCpB[T];
-Print[fCpm[65.71]]
+fCpm[65.71]
 
 (* ::Input:: *)
 (* 塔顶气化潜热 *)
@@ -47,13 +47,13 @@ fqrA=Interpolation[qianreA,InterpolationOrder->1];
 fqrB=Interpolation[qianreB,InterpolationOrder->1];
 xA=0.993;xB=1-xA;
 fqrm[T_]:=xA*fqrA[T]+xB*fqrB[T];
-Print[fqrm[80.29]]
+fqrm[80.29]
 
 (* ::Input:: *)
 (* 塔底汽化潜热 *)
 xA=0.00288;xB=1-xA;
 fqrm[T_]:=xA*fqrA[T]+xB*fqrB[T];
-Print[fqrm[131.41]]
+fqrm[131.41];
 
 (* ::Input:: *)
 (* 平均分子量 *)
