@@ -678,6 +678,28 @@ muMix[A_,B_,x_]:=A*x+B*(1-x)
 - 液相摩尔流率：$L=RD=0.492\times45.61=22.44\mathrm{kmol/h}$
 - 液相体积流率：$\frac{VM_{L,m}}{\rho_{L,m}}=\frac{22.44\times79.56}{843.0}=2.196\mathrm{m^3/h}=0.0006100\mathrm{m^3/s}$
 
-### 
+### 精馏段塔径
+
+1. 取塔板间距为500mm，板上液层高度为60mm，则板上空间为440mm。
+
+2. 以Smith法求空塔、泛点气速：
+
+$$
+\left(\frac{\mathrm{L}_{s}}{\mathrm{V}_{\mathrm{s}}}\right)\left(\frac{\rho_{\mathrm{L}}}{\rho_{\mathrm{V}}}\right)^{0.5}
+=\left(\frac{0.00061}{0.52}\right)\left(\frac{843.0}{3.001}\right)^{0.5}=0.0191
+$$
+
+查表[^chart]可得，$C_{f20}=0.065$
+
+负荷因子表面张力校正：$C_f=C_{f20}\left(\frac{\sigma}{20}\right)^0.5=0.0670$
+
+[^chart]:管国锋等.化工原理（第四版）[M].化学工业出版社，2015:360，图8-25
+
+故泛点气速：$u_max=C\left(\frac{\rho_L-\rho_V}{\rho_V}\right)^{0.5}=1.12\mathrm{m/2}$
+
+3. 操作气速为泛点气速的75%，即$0.841\mathrm{m/s}$
+4. 精馏段塔径$D=\sqrt{\frac{4V_s}{\pi u}}=0.887\mathrm{m}$
+
+取整为900mm，此时操作气速为$4\times0.52/(\pi*0.9^2)=0.817\mathrm{m/s}$
 
 ## 参考文献
