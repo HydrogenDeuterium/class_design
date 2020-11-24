@@ -695,7 +695,7 @@ $$
 
 负荷因子表面张力校正：$C_f=C_{f20}\left(\frac{\sigma}{20}\right)^0.5=0.0670$
 
-故泛点气速：$u_max=C\left(\frac{\rho_L-\rho_V}{\rho_V}\right)^{0.5}=1.12\mathrm{m/2}$
+故泛点气速：$u_{\max}=C\left(\frac{\rho_L-\rho_V}{\rho_V}\right)^{0.5}=1.12\mathrm{m/2}$
 
 3. 操作气速为泛点气速的75%，即$0.841\mathrm{m/s}$
 4. 精馏段塔径$D=\sqrt{\frac{4V_s}{\pi u}}=0.887\mathrm{m}$
