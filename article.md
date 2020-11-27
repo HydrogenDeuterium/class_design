@@ -350,7 +350,7 @@ $\mathrm{H}_{\mathrm{F}}+\mathrm{Q}_{\mathrm{F}}+\mathrm{Q}_{\mathrm{R}}=\mathrm
 
 则，其平均比热容$C_{PFm}$为：$132.51\times0.728+149.43\times(1-0.728)=137.71kJ/(kmol·℃)$
 
-因此，进料液焓$H_F=62.27kmol/h\times137.11kJ/(kmol·℃)\times(20-0)℃ \\=1.7\times10^5kJ/h$
+因此，进料液焓$H_F=62.27kmol/h\times137.11kJ/(kmol·℃)\times(20-0)℃ =1.7\times10^5kJ/h$
 
 ## 7.2 预热器供热$\mathrm{Q_F}$的计算
 
