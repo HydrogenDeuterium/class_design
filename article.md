@@ -677,11 +677,13 @@ sigmaMix[A_,B_,x_]:=A*B/(A*(1-x)+B*x)
 ```Mathematica
 {A80,B80}={0.306,0.426}
 {A88,B88}={0.279,0.394}
+{A131,B131}={0.197,0.291}
 muMix[A_,B_,x_]:=A*x+B*(1-x)
 (muMix[A80,B80,0.987]+muMix[A88,B88,0.728])/2
+(muMix[A88,B88,0.728]+muMix[A131,A131,0.00288])/2
 ```
 
-可得平均粘度为$0.309 \mathrm{mPa\cdot s}$
+可得精馏段平均粘度为$0.309 \mathrm{mPa\cdot s}$，提馏段平均粘度为$0.254 \mathrm{mPa\cdot s}$
 
 ### 8.2 精馏段气液负荷
 
