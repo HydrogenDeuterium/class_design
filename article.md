@@ -645,8 +645,8 @@ Print[rhoMix[84.26,(0.987+0.728)/2],rhoMix[84.26,(0.987+0.728)/2]]
 
 $$
 \rho_{V,m}=\frac{\mathrm{p_mM_{V,m}}}{\mathrm{RT_m}}
-          =\frac{108.1\times82.74}{8.314\times(273.15+84.26)}\\
-          =3.01\mathrm{kg/m^3}
+   =\frac{108.1\times82.74}{8.314\times(273.15+84.26)}\\
+   =3.01\mathrm{kg/m^3}
 $$
 
 #### 8.1.6 平均表面张力
