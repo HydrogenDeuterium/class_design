@@ -692,36 +692,47 @@ muMix[A_,B_,x_]:=A*x+B*(1-x)
 - 精馏段液相摩尔流率：$L=RD=0.492\times45.61=22.44\mathrm{kmol/h}$
 - 精馏段液相体积流率：$L_R=\frac{VM_{L,m}}{\rho_{L,m}}=\frac{22.44\times79.56}{843.0}=2.196\mathrm{m^3/h}=0.0006100\mathrm{m^3/s}$
 
-### 8.3 精馏段塔径
 - 提馏段气相摩尔流率：$V=68.05+(1-q)F=68.05\mathrm{kmol/h}$
-- 提馏段气相体积流率：$22.44\mathrm{kmol/h}$
+- 提馏段气相体积流率：$1875\mathrm{m^3/h}=0.52\mathrm{m^3/s}$
 - 提馏段液相摩尔流率：$L=22.44+QF=84.71\mathrm{kmol/h}$
 - 提馏段液相体积流率：$L_R=\frac{VM_{L,m}}{\rho_{L,m}}=\frac{84.71\times100}{924.0}=9.17\mathrm{m^3/h}=0.00255\mathrm{m^3/s}$
 
+### 8.3 塔径
 
 1. 取塔板间距$H_T=500\mathrm{mm}$，板上液层高度$H_L=60\mathrm{mm}$，则板上空间为$440\mathrm{mm}$。
 
 2. 以Smith法求空塔、泛点气速：
+
+对精馏段：
 
 $$
 \left(\frac{\mathrm{L}_{s}}{\mathrm{V}_{\mathrm{s}}}\right)\left(\frac{\rho_{\mathrm{L}}}{\rho_{\mathrm{V}}}\right)^{0.5}
 =\left(\frac{0.00061}{0.52}\right)\left(\frac{843.0}{3.001}\right)^{0.5}=0.0191
 $$
 
-查表[^chart]可得，$C_{f20}=0.065$
+查表[^chart]可得，$C_{f20}=0.065$。负荷因子表面张力校正：$C_f=C_{f20}\left(\frac{\sigma}{20}\right)^{0.5}=0.0670$
 
-[^chart]:管国锋等.化工原理（第四版）[M].化学工业出版社，2015:360，图8-25
+[^chart]:管国锋等.化工原理（第四版）[M].化学工业出版社，2015:360，图8-25vv
 
-负荷因子表面张力校正：$C_f=C_{f20}\left(\frac{\sigma}{20}\right)^0.5=0.0670$
+对提馏段：
 
-故泛点气速：$u_{\max}=C\left(\frac{\rho_L-\rho_V}{\rho_V}\right)^{0.5}=1.12\mathrm{m/2}$
+$$
+\left(\frac{\mathrm{L}_{s}}{\mathrm{V}_{\mathrm{s}}}\right)\left(\frac{\rho_{\mathrm{L}}}{\rho_{\mathrm{V}}}\right)^{0.5}
+=\left(\frac{0.00255}{0.52}\right)\left(\frac{924.0}{3.48}\right)^{0.5}=0.0797
+$$
 
-3. 操作气速为泛点气速的75%，即$0.841\mathrm{m/s}$
-4. 精馏段塔径$D=\sqrt{\frac{4V_s}{\pi u}}=0.887\mathrm{m}$
+查表[^chart]可得，$C_{f20}=0.025$。负荷因子表面张力校正：$C_f=C_{f20}\left(\frac{\sigma}{20}\right)^{0.5}=0.0258$
 
-取整为900mm，此时操作气速为$4\times0.52/(\pi*0.9^2)=0.817\mathrm{m/s}$，塔横截面积为$0.635\mathrm{m^2}$。
+综合两段，取更低值$C=0.0258$。
 
-### 8.4 精馏段塔板工艺结构尺寸的设计与计算
+故泛点气速：$u_{\max}=C\left(\frac{\rho_L-\rho_V}{\rho_V}\right)^{0.5}=0.0258\times16.264=0420\mathrm{m/2}$
+
+3. 取操作气速为泛点气速的75%，即$0.315\mathrm{m/s}$
+4. 精馏段塔径$D=\sqrt{\frac{4V_s}{\pi u}}=1.45\mathrm{m}$
+
+取整为1600mm，此时操作气速为$4\times0.52/(\pi*1.6^2)=0.259\mathrm{m/s}$，塔横截面积为$8.042\mathrm{m^2}$。
+
+### 8.4 精馏段、提馏段塔板工艺结构尺寸的设计与计算
 
 1. 溢流装置
 
