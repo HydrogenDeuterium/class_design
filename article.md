@@ -605,13 +605,14 @@ Print[fqrm[131.41]]
 使用如下的代码计算平均分子量：
 
 ```Mathematica
-MeanMmass[x_]:=(x*78.11+(1−x)*112.61)
-Print[MeanMmass[{}]]
+MeanMmass[x_]:=(x*78.11+(1-x)*112.61)
+Print@MeanMmass@{(0.987+0.728)/2,(0.993+0.929)/2}
+Print@MeanMmass@{(0.7280+0.00288)/2,(0.929+0.0111)/2}
 ```
 
-气相平均摩尔分数$\bar y=(0.993+0.728)/2=0.860$，气相平均分子量$\mathrm{M_{V,m}}=82.94\mathrm{kg/kmol}$
+精馏段液相平均分子量$\mathrm{M_{V,m}}=83.03\mathrm{kg/kmol}$，气相平均分子量$\mathrm{M_{V,m}}=79.46\mathrm{kg/kmol}$
 
-液相平均摩尔分数$\bar x=(0.987+0.929)/2=0.958$，液相平均分子量$\mathrm{M_{V,m}}=79.56\mathrm{kg/kmol}$
+提馏段液相平均分子量$\mathrm{M_{V,m}}=100.00\mathrm{kg/kmol}$，气相平均分子量$\mathrm{M_{V,m}}=96.39\mathrm{kg/kmol}$
 
 #### 8.1.4 液相平均密度
 
