@@ -685,14 +685,19 @@ muMix[A_,B_,x_]:=A*x+B*(1-x)
 
 可得精馏段平均粘度为$0.309 \mathrm{mPa\cdot s}$，提馏段平均粘度为$0.254 \mathrm{mPa\cdot s}$
 
-### 8.2 精馏段气液负荷
+### 8.2 气液负荷
 
-- 气相摩尔流率：$V=(R+1)D=1.492\times45.61=68.05\mathrm{kmol/h}$
-- 气相体积流率：$\frac{VM_{V,m}}{\rho_{V,m}}=\frac{68.05\times82.49}{3.01}=1875\mathrm{m^3/h}=0.52\mathrm{m^3/s}$
-- 液相摩尔流率：$L=RD=0.492\times45.61=22.44\mathrm{kmol/h}$
-- 液相体积流率：$L_R=\frac{VM_{L,m}}{\rho_{L,m}}=\frac{22.44\times79.56}{843.0}=2.196\mathrm{m^3/h}=0.0006100\mathrm{m^3/s}$
+- 精馏段气相摩尔流率：$V=(R+1)D=1.492\times45.61=68.05\mathrm{kmol/h}$
+- 精馏段气相体积流率：$\frac{VM_{V,m}}{\rho_{V,m}}=\frac{68.05\times82.49}{3.01}=1875\mathrm{m^3/h}=0.52\mathrm{m^3/s}$
+- 精馏段液相摩尔流率：$L=RD=0.492\times45.61=22.44\mathrm{kmol/h}$
+- 精馏段液相体积流率：$L_R=\frac{VM_{L,m}}{\rho_{L,m}}=\frac{22.44\times79.56}{843.0}=2.196\mathrm{m^3/h}=0.0006100\mathrm{m^3/s}$
 
 ### 8.3 精馏段塔径
+- 提馏段气相摩尔流率：$V=68.05+(1-q)F=68.05\mathrm{kmol/h}$
+- 提馏段气相体积流率：$22.44\mathrm{kmol/h}$
+- 提馏段液相摩尔流率：$L=22.44+QF=84.71\mathrm{kmol/h}$
+- 提馏段液相体积流率：$L_R=\frac{VM_{L,m}}{\rho_{L,m}}=\frac{84.71\times100}{924.0}=9.17\mathrm{m^3/h}=0.00255\mathrm{m^3/s}$
+
 
 1. 取塔板间距$H_T=500\mathrm{mm}$，板上液层高度$H_L=60\mathrm{mm}$，则板上空间为$440\mathrm{mm}$。
 
