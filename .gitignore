@@ -11,3 +11,5 @@ temp
 .vscode/settings.json
 temp*
 .idea/
+*.pdf
+!*demo*.pdf
