@@ -747,7 +747,7 @@ $$
 
    [^chart2]:管国锋等.化工原理（第四版）[M].化学工业出版社.356：图8-19
 
-   于是堰上溢流高度$h_{ow}=2.84\times10^-3\times1.02\left(\frac{L_R}{l_w}\right)^{\frac{2}{3}}=2.90\times 10^{-3}\times3.49^{\frac{2}{3}}=0.0067\mathrm{m}>0.006\mathrm{m}$
+   于是堰上溢流高度$h_{ow}=2.84\times10^-3\times1.02\left(\frac{L_R}{l_w}\right)^{\frac{2}{3}}=2.90\times 10^{-3}\times3.49^{\frac{2}{3}}=0.0067\mathrm{m}\geq 0.006\mathrm{m}$
 
    因此出口堰高$h_W=H_L-h_{ow}=0.06-0.00666=0.0533\mathrm{m}=53.3\mathrm{mm}$
 
@@ -758,7 +758,7 @@ $$
 
    即：宽度$W_d=0.14D=0.126\mathrm{m}$，面积$0.087\times\frac\pi 4D^2=0.0553\mathrm{m^2}$
 
-   此时，液体在降液管内停留的时间$\tau=A_fH_T/L_R=0.0553\times0.5/0.00061=45.3\mathrm{s}>5\mathrm{s}$，符合条件。
+   此时，液体在降液管内停留的时间$\tau=A_fH_T/L_R=0.0553\times0.5/0.00061=45.3 \mathrm{s} \geq 5\mathrm{s}$，符合条件。
 
    4. 降液管底隙高度
 
