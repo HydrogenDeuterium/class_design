@@ -765,7 +765,7 @@ $$
 
    液体通过降液管底隙的流速一般为0.07~0.25 m/s，取液体通过降液管底隙的流速$u_o=0.08 \mathrm{m\cdot s^{-1}}$，则
    $$
-   h_0=\frac{L_r,s}{L_Wu_0}=\frac{0.00255}{1.12\times0.08}=0.02846\mathrm{m}=28.5\mathrm{mm}\gt 25\mathrm{mm}
+   h_0=\frac{L_{r,s}}{L_Wu_0}=\frac{0.00255}{1.12\times0.08}=0.02846\mathrm{m}=28.5\mathrm{mm}\gt 25\mathrm{mm}
    $$
 
 2. 塔板布置
