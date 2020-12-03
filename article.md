@@ -775,7 +775,19 @@ $$
    由塔径为$1600\mathrm{mm}$，因此塔板宜作 4 块安装。
 
    2. 边缘区、安定区宽度
+
+   本设计取边缘区宽度$W_C=60\mathrm{mm}$，安定区宽度$W_S=100\mathrm{mm}$。
+
    3. 开孔区面积
+
+   $$
+   r=D/2-W_C=0.8-0.060=0.740\mathrm{m}\\
+   x=D/2-W_d-W_S=0.8-0.224-0.100=0.675\mathrm{mm}
+   $$
+   因此开孔区面积$A_a=2\left[x \sqrt{r^2-x^2}+\frac\pi{180} \arcsin\left(\frac\pi r\right) \right]\\$
+   $=2\left[0.476+\frac\pi{180}0.74^2\arcsin\left(\frac{0.476}{} \right) \right]$
+   $=1.304\mathrm{m^2}$
+
 2. 开孔数与开孔率
 3. 精馏段塔高
 
