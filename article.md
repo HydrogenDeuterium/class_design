@@ -668,7 +668,7 @@ sigmaMix[A_,B_,x_]:=A*B/(A*(1-x)+B*x)
 (sigmaMix[A88,B88,0.0.728]+sigmaMix[A131,B131,0.00288])/2
 ```
 
-可得精馏段平均表面张力为$21.26 \mathrm{mN/m}$，提馏段平均表面张力为$\sigma_{m}22.85\mathrm{mN/m}$。
+可得精馏段平均表面张力为$21.26 \mathrm{mN/m}$，提馏段平均表面张力为$\sigma_{m}=22.85\mathrm{mN/m}$。
 
 #### 8.1.7 平均粘度
 
