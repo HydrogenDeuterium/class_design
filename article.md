@@ -812,7 +812,7 @@ $$
 [^chart851]:管国锋等.化工原理（第四版）[M].化学工业出版社，2015.357：图8-21
 
 $$
-h_d=0.051\left(\frac{u_{0，V}}{C_0}\right)^2\frac{\rho_v}{\rho_L}\\
+h_d=0.051\left(\frac{u_{0,V}}{C_0}\right)^2\frac{\rho_v}{\rho_L}\\
 h_{d,1}=0.051\left(\frac{2.75}{0.78}\right)^2\frac{3.01}{843.9}
        =0.00226\mathrm{m}(精馏段)\\
 h_{d,2}=0.051\left(\frac{2.75}{0.78}\right)^2\frac{3.48}{943.0}
