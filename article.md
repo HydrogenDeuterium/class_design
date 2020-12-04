@@ -846,4 +846,19 @@ $$
 
 3. 单板压降
 
+$$
+h_f=h_d+h_L\\
+h_{f,1}=0.0349\mathrm{m}\\
+h_{f,2}=0.0374\mathrm{m}
+$$
+
+因此压降$\Delta P_f=\rho_Lgh_f$，也即：
+
+$$
+\Delta P_{f,1}=843.9\cdot g \cdot 0.0349=289\mathrm{Pa}\\
+\Delta P_{f,2}=924.0\cdot g \cdot 0.0374=339\mathrm{Pa}
+$$
+
+$\Delta P_f<0.7\mathrm{kPa}$，符合设计条件。
+
 ## 参考文献
