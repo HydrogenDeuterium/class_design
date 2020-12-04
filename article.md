@@ -644,15 +644,11 @@ Print[rhoMix[84.26,(0.987+0.728)/2],rhoMix[109.82,(0.987+0.728)/2]]
 - 平均温度：$84.26℃$，$109.82℃$
 
 $$
-\rho_{V,m,精}=\frac{\mathrm{p_mM_{V,m}}}{\mathrm{RT_m}}
-   =\frac{108.1\times82.74}{8.314\times(273.15+84.26)}\\
-   =3.01\mathrm{kg/m^3}
-$$
-
-$$
-\rho_{V,m,提}=\frac{\mathrm{p_mM_{V,m}}}{\mathrm{RT_m}}
-   =\frac{115.1\times96.39}{8.314\times(273.15+109.82)}\\
-   =3.48\mathrm{kg/m^3}
+\rho_V=\frac{\mathrm{p_mM_{V,m}}}{\mathrm{RT_m}}
+   \rho_{V,1}=\frac{108.1\times82.74}{8.314\times(273.15+84.26)}\\
+   =3.01\mathrm{kg/m^3}(精馏段)\\
+   \rho_{V,2}=\frac{115.1\times96.39}{8.314\times(273.15+109.82)}\\
+   =3.48\mathrm{kg/m^3}(提馏段)
 $$
 
 #### 8.1.6 平均表面张力
@@ -688,12 +684,12 @@ muMix[A_,B_,x_]:=A*x+B*(1-x)
 ### 8.2 气液负荷
 
 - 精馏段气相摩尔流率：$V=(R+1)D=1.492\times45.61=68.05\mathrm{kmol/h}$
-- 精馏段气相体积流率：$\frac{VM_{V,m}}{\rho_{V,m}}=\frac{68.05\times82.49}{3.01}=1875\mathrm{m^3/h}=0.52\mathrm{m^3/s}$
+- 精馏段气相体积流率：$V_R=\frac{VM_{V,m}}{\rho_{V,m}}=\frac{68.05\times82.49}{3.01}=1875\mathrm{m^3/h}=0.52\mathrm{m^3/s}$
 - 精馏段液相摩尔流率：$L=RD=0.492\times45.61=22.44\mathrm{kmol/h}$
 - 精馏段液相体积流率：$L_R=\frac{VM_{L,m}}{\rho_{L,m}}=\frac{22.44\times79.56}{843.0}=2.196\mathrm{m^3/h}=0.0006100\mathrm{m^3/s}$
 
 - 提馏段气相摩尔流率：$V=68.05+(1-q)F=68.05\mathrm{kmol/h}$
-- 提馏段气相体积流率：$1875\mathrm{m^3/h}=0.52\mathrm{m^3/s}$
+- 提馏段气相体积流率：$V_R=1875\mathrm{m^3/h}=0.52\mathrm{m^3/s}$
 - 提馏段液相摩尔流率：$L=22.44+QF=84.71\mathrm{kmol/h}$
 - 提馏段液相体积流率：$L_R=\frac{VM_{L,m}}{\rho_{L,m}}=\frac{84.71\times100}{924.0}=9.17\mathrm{m^3/h}=0.00255\mathrm{m^3/s}$
 
