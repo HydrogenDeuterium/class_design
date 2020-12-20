@@ -867,4 +867,25 @@ $$
 u_n=\frac{V_{R,s}}{A_T-A_f}=\frac{0.52}{2.01-0.175}=0.28\mathrm{m\cdot s^{-1}}
 $$
 
+取板上泡沫层厚度为液层的2.5倍，即$H_f=2.5H_L=60\times2.5=150\mathrm{mm}$
+
+则雾沫夹带量$e_V=\frac{5.7\times10^{-6}}{\sigma_{m}}\cdot \left(
+   \frac{u_n}{H_T-H_f}
+\right)$，故有：
+
+$$
+e_{v,1}=\frac{5.7\times10^{-6}}{21.26}\cdot
+\left(
+   \frac{0.28}{0.5-0.15}
+\right)
+=0.00021\mathrm{kg(Liquid)\cdot kg^{-1}(Gas)}\\
+e_{v,2}=\frac{5.7\times10^{-6}}{22.85}\cdot
+\left(
+   \frac{0.28}{0.5-0.15}
+\right)
+=0.00020\mathrm{kg(Liquid)\cdot kg^{-1}(Gas)}
+$$
+
+计算结果不大于$0.1\mathrm{kg(Liquid)\cdot kg^{-1}(Gas)}$，满足要求，不发生过量液沬夹带。
+
 ## 参考文献
