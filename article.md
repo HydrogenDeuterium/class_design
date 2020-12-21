@@ -786,7 +786,7 @@ $$
 
    4. 开孔数与开孔率
 
-   取筛孔半径为$d_0=5\mathrm{mm}$，正三角形排列；筛板使用碳钢，厚度$\delta=3\mathrm{mm}$，孔的距径比$t/d_0=2.5$，即$t=5*2.5=12.5\mathrm{mm}$。
+   取筛孔半径为$d_0=4\mathrm{mm}$，正三角形排列；筛板使用碳钢，厚度$\delta=3\mathrm{mm}$，孔的距径比$t/d_0=3$，即$t=4*3=12\mathrm{mm}$。
 
    每层塔板的开孔数$n=\left(\frac{1158\times10^3}{t^2}\right)A_a=\left(\frac{1158\times10^3}{12.5^2}\right)1.304=9644$(个)
 
