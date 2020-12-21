@@ -808,16 +808,16 @@ $$
 
 1. 气体通过干板的压降
 
-由$\delta/d_0=0.6$，开孔率$\varphi=0.145$，查表[^chart851]可知，孔流系数$C_0=0.78$。
+由$\delta/d_0=0.75$，开孔率$\varphi=0.093$，查表[^chart851]可知，孔流系数$C_0=0.77$。
 
 [^chart851]:管国锋等.化工原理（第四版）[M].化学工业出版社，2015.357：图8-21
 
 $$
 h_d=0.051\left(\frac{u_{0,V}}{C_0}\right)^2\frac{\rho_v}{\rho_L}\\
-h_{d,1}=0.051\left(\frac{2.75}{0.78}\right)^2\frac{3.01}{843.9}
-       =0.00226\mathrm{m}(精馏段)\\
-h_{d,2}=0.051\left(\frac{2.75}{0.78}\right)^2\frac{3.48}{943.0}
-       =0.00234\mathrm{m}(提馏段)
+h_{d,1}=0.051\left(\frac{2.75}{0.77}\right)^2\frac{3.01}{843.9}
+       =0.00232\mathrm{m}(精馏段)\\
+h_{d,2}=0.051\left(\frac{2.75}{0.77}\right)^2\frac{3.48}{943.0}
+       =0.00240\mathrm{m}(提馏段)
 $$
 
 2. 气体通过板上液层的压降
@@ -849,15 +849,15 @@ $$
 
 $$
 h_f=h_d+h_L\\
-h_{f,1}=0.0349\mathrm{m}\\
-h_{f,2}=0.0374\mathrm{m}
+h_{f,1}=0.00232+0.0326=0.0349\mathrm{m}\\
+h_{f,2}=0.00240+0.0351=0.0375\mathrm{m}
 $$
 
 因此压降$\Delta P_f=\rho_Lgh_f$，也即：
 
 $$
 \Delta P_{f,1}=843.9\cdot g \cdot 0.0349=289\mathrm{Pa}\\
-\Delta P_{f,2}=924.0\cdot g \cdot 0.0374=339\mathrm{Pa}
+\Delta P_{f,2}=924.0\cdot g \cdot 0.0374=340\mathrm{Pa}
 $$
 
 $\Delta P_f<0.7\mathrm{kPa}$，符合设计条件。
