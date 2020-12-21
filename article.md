@@ -780,21 +780,22 @@ $$
    r=D/2-W_C=0.8-0.060=0.740\mathrm{m}\\
    x=D/2-W_d-W_S=0.8-0.224-0.100=0.675\mathrm{mm}
    $$
+
    因此开孔区面积$A_a=2\left[x \sqrt{r^2-x^2}+\frac\pi{180} \arcsin\left(\frac\pi r\right) \right]\\$
    $=2\left[0.476+\frac\pi{180}0.74^2\arcsin\left(\frac{0.476}{} \right) \right]$
    $=1.304\mathrm{m^2}$
 
    4. 开孔数与开孔率
 
-   取筛孔半径为$d_0=4\mathrm{mm}$，正三角形排列；筛板使用碳钢，厚度$\delta=3\mathrm{mm}$，孔的距径比$t/d_0=3$，即$t=4*3=12\mathrm{mm}$。
+   取筛孔半径为$d_0=4\mathrm{mm}$，正三角形排列；筛板使用碳钢，厚度$\delta=3\mathrm{mm}$，孔的距径比$t/d_0=3.125$，即$t=4*3=12.5\mathrm{mm}$。
 
    每层塔板的开孔数$n=\left(\frac{1158\times10^3}{t^2}\right)A_a=\left(\frac{1158\times10^3}{12.5^2}\right)1.304=9644$(个)
 
-   塔板开孔率$\varphi=\frac{0.907}{(t/d_0)^2}=\frac{0.907}{2.5^2}=0.145\in$[5%,15%]，满足条件。
+   塔板开孔率$\varphi=\frac{0.907}{(t/d_0)^2}=\frac{0.907}{3.125^2}=0.093\in$[5%,15%]，满足条件。
 
-   每层塔板的开孔面积$A_0=\varphi A_s=0.145\times 1.304=0.189\mathrm{mm^2}$
+   每层塔板的开孔面积$A_0=\varphi A_s=0.145\times 1.304=0.121\mathrm{mm^2}$
 
-   气体通过筛孔的气速$u_{0,V}=V_{R,s}/A_0=0.52/0.189=2.75\mathrm{m\cdot s^{-1}}$
+   气体通过筛孔的气速$u_{0,V}=V_{R,s}/A_0=0.52/0.189=4.29\mathrm{m\cdot s^{-1}}$
 
 3. 塔高
     - 精馏段：$Z_1=(N_{p1}-1)H_T=7\times0.5=3.5\mathrm{m}$
