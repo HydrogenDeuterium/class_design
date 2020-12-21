@@ -787,15 +787,15 @@ $$
 
    4. 开孔数与开孔率
 
-   取筛孔半径为$d_0=4\mathrm{mm}$，正三角形排列；筛板使用碳钢，厚度$\delta=3\mathrm{mm}$，孔的距径比$t/d_0=3.5$，即$t=4*3.5=14\mathrm{mm}$。
+   取筛孔半径为$d_0=3.5\mathrm{mm}$，正三角形排列；筛板使用碳钢，厚度$\delta=3\mathrm{mm}$，孔的距径比$t/d_0=4$，即$t=3.5*4=14\mathrm{mm}$。
 
    每层塔板的开孔数$n=\left(\frac{1158\times10^3}{t^2}\right)A_a=\left(\frac{1158\times10^3}{14^2}\right)1.304=7704$(个)
 
-   塔板开孔率$\varphi=\frac{0.907}{(t/d_0)^2}=\frac{0.907}{3.125^2}=0.074\in$[5%,15%]，满足条件。
+   塔板开孔率$\varphi=\frac{0.907}{(t/d_0)^2}=\frac{0.907}{4^2}=0.0567\in$[5%,15%]，满足条件。
 
-   每层塔板的开孔面积$A_0=\varphi A_s=0.074\times 1.304=0.0965\mathrm{m^2}$
+   每层塔板的开孔面积$A_0=\varphi A_s=0.0567\times 1.304=0.0739\mathrm{m^2}$
 
-   气体通过筛孔的气速$u_{0,V}=V_{R,s}/A_0=0.52/0.189=5.39\mathrm{m\cdot s^{-1}}$
+   气体通过筛孔的气速$u_{0,V}=V_{R,s}/A_0=0.52/0.0567=9.17\mathrm{m\cdot s^{-1}}$
 
 3. 塔高
     - 精馏段：$Z_1=(N_{p1}-1)H_T=7\times0.5=3.5\mathrm{m}$
@@ -808,16 +808,16 @@ $$
 
 1. 气体通过干板的压降
 
-由$\delta/d_0=0.75$，开孔率$\varphi=0.074$，查表[^chart851]可知，孔流系数$C_0=0.75$。
+由$\delta/d_0=0.86$，开孔率$\varphi=0.0567$，查表[^chart851]可知，孔流系数$C_0=0.78$。
 
 [^chart851]:管国锋等.化工原理（第四版）[M].化学工业出版社，2015.357：图8-21
 
 $$
 h_d=0.051\left(\frac{u_{0,V}}{C_0}\right)^2\frac{\rho_v}{\rho_L}\\
-h_{d,1}=0.051\left(\frac{5.39}{0.75}\right)^2\frac{3.01}{843.9}
-       =0.00940\mathrm{m}(精馏段)\\
-h_{d,2}=0.051\left(\frac{5.39}{0.75}\right)^2\frac{3.48}{943.0}
-       =0.00972\mathrm{m}(提馏段)
+h_{d,1}=0.051\left(\frac{9.17}{0.78}\right)^2\frac{3.01}{843.9}
+       =0.0251\mathrm{m}(精馏段)\\
+h_{d,2}=0.051\left(\frac{9.17}{0.78}\right)^2\frac{3.48}{943.0}
+       =0.0260\mathrm{m}(提馏段)
 $$
 
 2. 气体通过板上液层的压降
@@ -826,10 +826,10 @@ $h_L=\beta(h_w+h_{ow})=\beta H_L$，其中$H_L$为板上的液层高度。
 
 对于单流型塔，有效截面的空气速$u_a=\frac{V_{R,s}}{A_T-2A_f}=\frac{0.52}{2.01-2\times0.175}=0.313\mathrm{m\cdot s^{-1}}$
 
-因此，动能因子
+因此，动能因子$
+F_a=u_a\sqrt{\rho_V}$
 
 $$
-F_a=u_a\sqrt{\rho_V}\\
 F_{a,1}=0.313\times \sqrt{3.01}=0.543\\
 F_{1,2}=0.313\times \sqrt{3.48}=0.584
 $$
@@ -849,15 +849,15 @@ $$
 
 $$
 h_f=h_d+h_L\\
-h_{f,1}=0.00940+0.0326=0.0420\mathrm{m}\\
-h_{f,2}=0.00972+0.0351=0.0448\mathrm{m}
+h_{f,1}=0.0251+0.0326=0.0577\mathrm{m}\\
+h_{f,2}=0.0260+0.0351=0.0611\mathrm{m}
 $$
 
-因此压降$\Delta P_f=\rho_Lgh_f$，也即：
+因此压降$\Delta P_f=\rho_L g h_f$，也即：
 
 $$
-\Delta P_{f,1}=843.9\cdot g \cdot 0.0420=347.7\mathrm{Pa}\\
-\Delta P_{f,2}=924.0\cdot g \cdot 0.0448=406.1\mathrm{Pa}
+\Delta P_{f,1}=843.9\cdot g \cdot 0.0420=477.7\mathrm{Pa}\\
+\Delta P_{f,2}=924.0\cdot g \cdot 0.0448=553.8\mathrm{Pa}
 $$
 
 $\Delta P_f<0.7\mathrm{kPa}$，符合设计条件。
@@ -878,6 +878,7 @@ e_{v,1}=\frac{5.7\times10^{-6}}{21.26}\cdot
    \frac{0.28}{0.5-0.15}
 \right)\\
 =0.00021\mathrm{kg(Liquid)\cdot kg^{-1}(Gas)}\\
+
 e_{v,2}=\frac{5.7\times10^{-6}}{22.85}\cdot
 \left(
    \frac{0.28}{0.5-0.15}
@@ -897,18 +898,19 @@ $$
 其中，$h_\sigma$为克服筛孔处界面张力产生的压降（以清液柱高度计算），计算公式为：$h_\sigma=\frac{4\times10^{-3}\sigma_m}{\rho_L d_0}$：
 
 $$
-h_{\sigma,1}=\frac{4\times10^{-3}\times21.26}{843.9\times9.81\times 0.004}=0.00256\mathrm{m}\\
+h_{\sigma,1}=\frac{4\times10^{-3}\times21.26}{843.9\times9.81\times 0.004}=0.00293\mathrm{m}\\
 
-h_{\sigma,2}=\frac{4\times10^{-3}\times22.85}{924.0\times9.81\times 0.004}=0.00252\mathrm{m}\\
+h_{\sigma,2}=\frac{4\times10^{-3}\times22.85}{924.0\times9.81\times 0.004}=0.00288\mathrm{m}\\
 $$
 
 带入可得：
 
 $$
-u_{om,1}=4.4\times0.78\sqrt{(0.0056+0.13\times0.06-0.00256)843.9/3.01}\\=5.98\mathrm{m\cdot s^{-1}}\\
-u_{om,1}=4.4\times0.78\sqrt{(0.0056+0.13\times0.06-0.00252)924.0/3.48}\\=5.83\mathrm{m\cdot s^{-1}}\\
+u_{om,1}=4.4\times0.78\sqrt{(0.0056+0.13\times0.06-0.00293)843.9/3.01}\\=5.88\mathrm{m\cdot s^{-1}}\\
+
+u_{om,1}=4.4\times0.78\sqrt{(0.0056+0.13\times0.06-0.00288)924.0/3.48}\\=5.74\mathrm{m\cdot s^{-1}}\\
 $$
 
-$u_0=5.39\mathrm{m\cdot s^{-1}}$
+此时$u_0=9.17\mathrm{m\cdot s^{-1}}=1.5\times6.11\mathrm{m\cdot s^{-1}}$，符合条件。
 
 ## 参考文献
