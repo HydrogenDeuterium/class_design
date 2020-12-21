@@ -899,8 +899,9 @@ $$
 其中，$h_\sigma$为克服筛孔处界面张力产生的压降（以清液柱高度计算），计算公式为：$h_sigma=\frac{4\times10^{-3}\sigma_m}{\rho_L d_0}$：
 
 $$
-h_{sigma,1}=\frac{4\times10^{-3}\times21.26}{843.9\times9.81\times 0.004}=0.00256\mathrm{m}\\
-h_{sigma,2}=\frac{4\times10^{-3}\times22.85}{924.0\times9.81\times 0.004}=0.00252\mathrm{m}\\
+h_{\sigma,1}=\frac{4\times10^{-3}\times21.26}{843.9\times9.81\times 0.004}=0.00256\mathrm{m}\\
+
+h_{\sigma,2}=\frac{4\times10^{-3}\times22.85}{924.0\times9.81\times 0.004}=0.00252\mathrm{m}\\
 $$
 
 $$
