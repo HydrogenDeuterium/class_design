@@ -896,18 +896,18 @@ $$
 u_{om}=4.4C_0\sqrt{(0.0056+0.13H_L-h_\sigma)\rho_L/\rho_V}\\
 $$
 
-其中，$h_\sigma$为克服筛孔处界面张力产生的压降（以清夜柱高度计算），计算公式为：$h_sigma=\frac{4\times10^{-3}\sigma_m}{\rho_Ld_0}$：
+其中，$h_\sigma$为克服筛孔处界面张力产生的压降（以清液柱高度计算），计算公式为：$h_sigma=\frac{4\times10^{-3}\sigma_m}{\rho_L d_0}$：
 
 $$
-h_{sigma,1}=\frac{4\times10^{-3}\times21.26}{843.9\times9.81\times 0.005}=0.00205\mathrm{m}\\
-h_{sigma,2}=\frac{4\times10^{-3}\times22.85}{924.0\times9.81\times 0.005}=0.00202\mathrm{m}\\
+h_{sigma,1}=\frac{4\times10^{-3}\times21.26}{843.9\times9.81\times 0.004}=0.00256\mathrm{m}\\
+h_{sigma,2}=\frac{4\times10^{-3}\times22.85}{924.0\times9.81\times 0.004}=0.00252\mathrm{m}\\
 $$
 
 $$
-u_{om,1}=4.4\times0.78\sqrt{(0.0056+0.13\times0.06-0.00205)843.9/3.01}\\=6.12\mathrm{m\cdot s^{-1}}\\
-u_{om,1}=4.4\times0.78\sqrt{(0.0056+0.13\times0.06-0.00202)924.0/3.48}\\=5.97\mathrm{m\cdot s^{-1}}\\
+u_{om,1}=4.4\times0.78\sqrt{(0.0056+0.13\times0.06-0.00256)843.9/3.01}\\=5.98\mathrm{m\cdot s^{-1}}\\
+u_{om,1}=4.4\times0.78\sqrt{(0.0056+0.13\times0.06-0.00252)924.0/3.48}\\=5.83\mathrm{m\cdot s^{-1}}\\
 $$
 
-$u_0=2.75\mathrm{m\cdot s^{-1}}$
+$u_0=4.29\mathrm{m\cdot s^{-1}}$
 
 ## 参考文献
