@@ -888,4 +888,18 @@ $$
 
 计算结果不大于$0.1\mathrm{kg(Liquid)\cdot kg^{-1}(Gas)}$，满足要求，不发生过量液沬夹带。
 
+
+按如下经验公式计算漏液点气速：
+$$
+u_{om}=4.4C_0\sqrt{(0.0056+0.13H_L-h_\sigma)\rho_L/\rho_V}\\
+$$
+
+其中，$h_\sigma$为克服筛孔处界面张力产生的压降（以清夜柱高度计算），计算公式为：$h_sigma=\frac{4\times10^{-3}\sigma_m}{\rho_Ld_0}$：
+
+$$
+h_{sigma,1}=\frac{4\times10^{-3}\times21.26}{843.9\times9.81\times 0.005}=0.00205\mathrm{m}\\
+h_{sigma,2}=\frac{4\times10^{-3}\times22.85}{924.0\times9.81\times 0.005}=0.00202\mathrm{m}\\
+$$
+
+$$
 ## 参考文献
