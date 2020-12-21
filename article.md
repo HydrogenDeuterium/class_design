@@ -878,12 +878,12 @@ $$
 e_{v,1}=\frac{5.7\times10^{-6}}{21.26}\cdot
 \left(
    \frac{0.28}{0.5-0.15}
-\right)
+\right)\\
 =0.00021\mathrm{kg(Liquid)\cdot kg^{-1}(Gas)}\\
 e_{v,2}=\frac{5.7\times10^{-6}}{22.85}\cdot
 \left(
    \frac{0.28}{0.5-0.15}
-\right)
+\right)\\
 =0.00020\mathrm{kg(Liquid)\cdot kg^{-1}(Gas)}
 $$
 
