@@ -877,14 +877,14 @@ $$
 e_{v,1}=\frac{5.7\times10^{-6}}{21.26}\cdot
 \left(
    \frac{0.28}{0.5-0.15}
-\right)\\
-=0.00021\mathrm{kg(Liquid)\cdot kg^{-1}(Gas)}\\
+\right)^{3.2}\\
+=1.28\times10^{-7}\mathrm{kg(Liquid)\cdot kg^{-1}(Gas)}\\
 
 e_{v,2}=\frac{5.7\times10^{-6}}{22.85}\cdot
 \left(
    \frac{0.28}{0.5-0.15}
-\right)\\
-=0.00020\mathrm{kg(Liquid)\cdot kg^{-1}(Gas)}
+\right)^{3.2}\\
+=1.22\times10^{-7}{kg(Liquid)\cdot kg^{-1}(Gas)}
 $$
 
 计算结果不大于$0.1\mathrm{kg(Liquid)\cdot kg^{-1}(Gas)}$，满足要求，不发生过量液沬夹带。
