@@ -918,14 +918,14 @@ $$
 
 为防止液泛，应该使得降液管清液高度$H_d\le(H_T+h_W)$，而$H_d=h_f+H_L+\Sigma h_f$。
 
-降液管阻力：$\Sigma H_f=0.153\left(\frac{L_{R,s}}{L_Wh_0}\right)$，故：
+降液管阻力：$\Sigma H_f=0.153\left(\frac{L_{R,s}}{L_Wh_0}\right)^2$，故：
 
 $$
 \Sigma H_{f,1}=0.153\left(\frac{0.00061}{1.12\times0.02846}\right)
-=0.00293\mathrm{m}\\
+=3.62\times10^{-11}\mathrm{m}\\
 
 \Sigma H_{f,1}=0.153\left(\frac{0.00255}{1.12\times0.02846}\right)
-=0.0120\mathrm{m}
+=6.33\times10^{-10}\mathrm{m}
 $$
 
 因此，管内清液层高度$H_d=h_f+H_L+\Sigma h_f$，有：
