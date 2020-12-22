@@ -761,7 +761,8 @@ $$
 
    液体通过降液管底隙的流速一般为0.07~0.25 m/s，取液体通过降液管底隙的流速$u_{0,L}=0.08 \mathrm{m\cdot s^{-1}}$，则
    $$
-   h_0=\frac{L_{r,s}}{L_Wu_{0,L}}=\frac{0.00255}{1.12\times0.08}=0.02846\mathrm{m}=28.5\mathrm{mm}\gt 25\mathrm{mm}
+   h_0=\frac{L_{r,s}}{L_Wu_{0,L}}=\frac{0.00255}{1.12\times0.08}=0.02846\mathrm{m}\\
+   =28.5\mathrm{mm}\gt 25\mathrm{mm}
    $$
 
 2. 塔板布置
@@ -912,5 +913,18 @@ u_{om,1}=4.4\times0.78\sqrt{(0.0056+0.13\times0.06-0.00288)924.0/3.48}\\=5.74\ma
 $$
 
 此时$u_0=9.17\mathrm{m\cdot s^{-1}}=1.5\times6.11\mathrm{m\cdot s^{-1}}$，符合条件。
+
+### 8.5.4 液泛的计算
+
+为防止液泛，应该使得降液管清液高度$H_d\le(H_T+h_W)$，而$H_d=h_f+H_L+\Sigma h_f$。
+
+降液管阻力：$\Sigma H_f=0.153\left(\frac{L_{R,s}}{L_Wh_0}\right)$，故：
+
+$$
+\Sigma H_{f,1}=0.153\left(\frac{0.00061}{1.12\times0.02846}\right)
+=0.00293\mathrm{m}\\
+\Sigma H_{f,1}=0.153\left(\frac{0.00255}{1.12\times0.02846}\right)
+=0.0120\mathrm{m}
+$$
 
 ## 参考文献
