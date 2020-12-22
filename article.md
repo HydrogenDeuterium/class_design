@@ -913,4 +913,66 @@ $$
 
 此时$u_0=9.17\mathrm{m\cdot s^{-1}}=1.5\times6.11\mathrm{m\cdot s^{-1}}$，符合条件。
 
+### 8.5.4 液泛的计算
+
+为防止液泛，应该使得降液管清液高度$H_d\le(H_T+h_W)$，而$H_d=h_f+H_L+\Sigma h_f$。
+
+降液管阻力：$\Sigma H_f=0.153\left(\frac{L_{R,s}}{L_Wh_0}\right)$，故：
+
+$$
+\Sigma H_{f,1}=0.153\left(\frac{0.00061}{1.12\times0.02846}\right)
+=0.00293\mathrm{m}\\
+
+\Sigma H_{f,1}=0.153\left(\frac{0.00255}{1.12\times0.02846}\right)
+=0.0120\mathrm{m}
+$$
+
+因此，管内清液层高度$H_d=h_f+H_L+\Sigma h_f$，有：
+$$
+H_{d,1}=0.0577+0.06+0.00293=0.121\mathrm{m}\\
+H_{d,2}=0.0611+0.06+0.0120=0.133\mathrm{m}
+$$
+
+取泡沫相对密度$\Phi=0.5$，故允许的最大清液层高度$\Phi(H_T+h_W)=0.2632\mathrm{m}$
+
+因此$H_d\le \Phi(H_T+h_W)$成立，故，不会发生液泛。
+
+经过以上的流体力学验算，可以认为，精馏塔塔径与塔板工艺尺寸合适。
+
+## 8.6 精馏、提馏段塔板负荷性能图
+
+负荷性能图的绘制过程如下：
+
+### 8.6.1 雾沫夹带线
+
+液沬夹带量按照如下的经验公式计算：
+
+$$
+e_V=\frac{5.7\times10^{-6}}{\sigma_{m}}\cdot \left(
+   \frac{u_n}{H_T-H_f}
+\right)^{3.2}
+$$
+
+其中，$u_n=\frac{V_{R,s}}{A_T-A_F}=0.545V_{R,s}$。
+
+取塔上泡沫层厚度$H_f$为板上液层厚度的2.5倍，则：
+
+<!--下面算出来的东西只和L_W有关，我是这么理解的-->
+
+$$
+\mathrm{H}_{\mathrm{f}} =2.5\mathrm{H}_{\mathrm{L}}=2.5\left(
+   \mathrm{h}_{\mathrm{w}}+\mathrm{h}_{\mathrm{ow}}\right)
+   =2.5 \times\left[0.0264+0.00284\left(\frac{3600 \mathrm{L}_{\mathrm{R,s}}}{1.12}\right)^{\frac23}\right]
+   \\
+   =0.121+1.546L^{\frac23}\mathrm{m}
+$$
+
+取$e=0.1$，化简有:
+
+$$
+V_1=8.299-33.877 L_1^{\frac23}\\
+\\\\
+V_2=8.114-33.112 L_2^{\frac23}
+$$
+
 ## 参考文献
