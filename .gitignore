@@ -1,16 +1,24 @@
-.idea/workspace.xml
+# 文件夹
+.idea/
+
+# 资源文件
+article.assets/
+
+# 按文件类型
 *.zip
-示例/5-石油化工基础数据手册.pdf
-export*
-commit.json
 *.docx
 *.xlsx
-article.assets/
 *.tmp
-temp
+commit.json
+.*.json
 .vscode/settings.json
-temp*
-.idea/
 *.pdf
 !*demo*.pdf
-.*.json
+
+# 按文件名
+export*
+temp
+temp*
+
+# 指定文件
+示例/5-石油化工基础数据手册.pdf
