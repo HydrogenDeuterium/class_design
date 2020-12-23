@@ -13,3 +13,4 @@ temp*
 .idea/
 *.pdf
 !*demo*.pdf
+.*.json
