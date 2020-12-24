@@ -28,13 +28,13 @@
 
 ```Mathematica
 MeanMmass[x_]:=(x*78.11+(1-x)*112.61)
-Print@MeanMmass@{(0.987+0.728)/2,(0.993+0.929)/2}
-Print@MeanMmass@{(0.7280+0.00288)/2,(0.929+0.0111)/2}
+Print@MeanMmass@{(0.968+0.728)/2,(0.993+0.935)/2}
+Print@MeanMmass@{(0.728+0.00288)/2,(0.935+0.0111)/2}
 ```
 
-精馏段液相平均分子量$\mathrm{M_{V,m}}=83.03\mathrm{kg/kmol}$，气相平均分子量$\mathrm{M_{V,m}}=79.46\mathrm{kg/kmol}$
+精馏段液相平均分子量$\mathrm{M_{V,m}}=83.35\mathrm{kg/kmol}$，气相平均分子量$\mathrm{M_{V,m}}=79.35\mathrm{kg/kmol}$
 
-提馏段液相平均分子量$\mathrm{M_{V,m}}=100.00\mathrm{kg/kmol}$，气相平均分子量$\mathrm{M_{V,m}}=96.39\mathrm{kg/kmol}$
+提馏段液相平均分子量$\mathrm{M_{V,m}}=100.00\mathrm{kg/kmol}$，气相平均分子量$\mathrm{M_{V,m}}=96.29\mathrm{kg/kmol}$
 
 ### 8.1.4 液相平均密度
 
