@@ -250,8 +250,8 @@ $$
 
 $$
 h_d=0.051\left(\frac{u_{0,V}}{C_0}\right)^2\frac{\rho_v}{\rho_L}\\
-h_{d,1}=0.051\left(\frac{13.877}{0.75，0.72}\right)^2\frac{2.888}{845.95}
-       =0.0596\mathrm{m}(精馏段)\\
+h_{d,1}=0.051\left(\frac{13.877}{0.78}\right)^2\frac{2.888}{845.95}
+       =0.0551\mathrm{m}(精馏段)\\
 h_{d,2}=0.051\left(\frac{8.67}{0.72}\right)^2\frac{3.48}{815.6}
        =0.316\mathrm{m}(提馏段)
 $$
@@ -286,18 +286,18 @@ $$
 
 $$
 h_f=h_d+h_L\\
-h_{f,1}=0.0251+0.0326=0.0577\mathrm{m}\\
-h_{f,2}=0.0260+0.0351=0.0611\mathrm{m}
+h_{f,1}=0.0551+0.0282=0.0833\mathrm{m}\\
+h_{f,2}=0.0316+0.0522=0.838\mathrm{m}
 $$
 
 因此压降$\Delta P_f=\rho_L g h_f$，也即：
 
 $$
-\Delta P_{f,1}=843.9\cdot g \cdot 0.0420=477.7\mathrm{Pa}\\
-\Delta P_{f,2}=924.0\cdot g \cdot 0.0448=553.8\mathrm{Pa}
+\Delta P_{f,1}=845.95\cdot g \cdot 0.0833=691.3\mathrm{Pa}\\
+\Delta P_{f,2}=815.6\cdot g \cdot 0.0838=670.5\mathrm{Pa}
 $$
 
-$\Delta P_f<0.7\mathrm{kPa}$，符合设计条件。
+单板压降偏高，此处暂时不做调整，若要调整，应增大开孔率$\varphi$和减小板上液层厚度,重复以上计算。
 
 ### 8.5.2 雾沫夹带量的验算
 
