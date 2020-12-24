@@ -51,7 +51,7 @@ Print@MeanMmass@{(0.728+0.00288)/2,(0.935+0.0111)/2}
 ```Mathematica
 rhoA[t_]:=912.13-1.186t
 rhoB[t_]:=1124.4-1.0657t
-rhoMix[t_,x_]:=(x*rhoA[t]+(1-x)*rhoB[t])
+rhoMix[t_,x_]:=1/(x/rhoA[t]+(1-x)/rhoB[t])
 Print[rhoMix[84.26,(0.987+0.728)/2],rhoMix[109.82,(0.987+0.728)/2]]
 ```
 
