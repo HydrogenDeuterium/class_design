@@ -301,26 +301,26 @@ $$
 
 ### 8.5.2 雾沫夹带量的验算
 
-塔内气速$u_n=\frac{V_{R,s}}{A_T-A_f}=\frac{0.52}{2.01-0.175}=0.28\mathrm{m\cdot s^{-1}}$
+塔内气速$u_n=\frac{V_{R,s}}{A_T-A_f}=\frac{0.519,0.494}{0.785-0.0707}={0.727, 0.691}\mathrm{m\cdot s^{-1}}$
 
-取板上泡沫层厚度为液层的2.5倍，即$H_f=2.5H_L=60\times2.5=150\mathrm{mm}$
+取板上泡沫层厚度为液层的2.5倍。
 
 则雾沫夹带量$e_V=\frac{5.7\times10^{-6}}{\sigma_{m}}\cdot \left(
    \frac{u_n}{H_T-H_f}
 \right)$，故有：
 
 $$
-e_{v,1}=\frac{5.7\times10^{-6}}{21.26}\cdot
+e_{v,1}=\frac{5.7\times10^{-6}}{21.32\times10^{-3}}\cdot
 \left(
-   \frac{0.28}{0.5-0.15}
+   \frac{6.65}{0.5-2.5\times0.047}
 \right)^{3.2}\\
-=1.28\times10^{-7}\mathrm{kg(Liquid)\cdot kg^{-1}(Gas)}\\
+=0.00208\mathrm{kg(Liquid)\cdot kg^{-1}(Gas)}\\
 
-e_{v,2}=\frac{5.7\times10^{-6}}{22.85}\cdot
+e_{v,2}=\frac{5.7\times10^{-6}}{20.85\times10^{-3}}\cdot
 \left(
-   \frac{0.28}{0.5-0.15}
+   \frac{6.33}{0.5-2.5\times0.087}
 \right)^{3.2}\\
-=1.22\times10^{-7}{kg(Liquid)\cdot kg^{-1}(Gas)}
+=0.00479{kg(Liquid)\cdot kg^{-1}(Gas)}
 $$
 
 计算结果不大于$0.1\mathrm{kg(Liquid)\cdot kg^{-1}(Gas)}$，满足要求，不发生过量液沬夹带。
@@ -329,26 +329,26 @@ $$
 
 按如下经验公式计算漏液点气速：
 $$
-u_{om}=4.4C_0\sqrt{(0.0056+0.13H_L-h_\sigma)\rho_L/\rho_V}\\
+u_{om}=4.4C_0\sqrt{(0.0056+0.13H_L-h_\sigma)\rho_L/\rho_V}
 $$
 
 其中，$h_\sigma$为克服筛孔处界面张力产生的压降（以清液柱高度计算），计算公式为：$h_\sigma=\frac{4\times10^{-3}\sigma_m}{\rho_L d_0}$：
 
 $$
-h_{\sigma,1}=\frac{4\times10^{-3}\times21.26}{843.9\times9.81\times 0.004}=0.00293\mathrm{m}\\
+h_{\sigma,1}=\frac{4\times10^{-3}\times21.32}{845.95\times9.81\times 0.004}=0.00206\mathrm{m}\\
 
-h_{\sigma,2}=\frac{4\times10^{-3}\times22.85}{924.0\times9.81\times 0.004}=0.00288\mathrm{m}\\
+h_{\sigma,2}=\frac{4\times10^{-3}\times20.85}{815.6\times9.81\times 0.004}=0.00208\mathrm{m}\\
 $$
 
 带入可得：
 
 $$
-u_{om,1}=4.4\times0.78\sqrt{(0.0056+0.13\times0.06-0.00293)843.9/3.01}\\=5.88\mathrm{m\cdot s^{-1}}\\
+u_{om,1}=4.4\times0.78\sqrt{(0.0056+0.13\times0.047-0.00206)845.95/2.89}\\=5.77\mathrm{m\cdot s^{-1}}\\
 
-u_{om,1}=4.4\times0.78\sqrt{(0.0056+0.13\times0.06-0.00288)924.0/3.48}\\=5.74\mathrm{m\cdot s^{-1}}\\
+u_{om,1}=4.4\times0.78\sqrt{(0.0056+0.13\times0.087-0.00208)815.6/3.48}\\=5.91\mathrm{m\cdot s^{-1}}\\
 $$
 
-此时$u_0=9.17\mathrm{m\cdot s^{-1}}=1.5\times6.11\mathrm{m\cdot s^{-1}}$，符合条件。
+此时$u_0={13.877, 8.67}\mathrm{m\cdot s^{-1}}$，基本符合条件，提馏段孔速偏低，此处不再调整，如要调整，应减小开孔率和降低板上液层厚度，再行计算。
 
 ### 8.5.4 液泛的计算
 
