@@ -148,17 +148,17 @@ $$
 
 $$
 \left(\frac{\mathrm{L}_{s}}{\mathrm{V}_{\mathrm{s}}}\right)\left(\frac{\rho_{\mathrm{L}}}{\rho_{\mathrm{V}}}\right)^{0.5}
-=\left(\frac{0.00255}{0.52}\right)\left(\frac{924.0}{3.48}\right)^{0.5}=0.0797
+=\left(\frac{0.00255}{0.52}\right)\left(\frac{924.0}{3.48}\right)^{0.5}=0.0894
 $$
 
-查表[^chart]可得，$C_{f20}=0.025$。负荷因子表面张力校正：$C_f=C_{f20}\left(\frac{\sigma}{20}\right)^{0.5}=0.0258$
+查表[^chart]可得，$C_{f20}=0.082$。负荷因子表面张力校正：$C_f=C_{f20}\left(\frac{\sigma}{20}\right)^{0.5}=0.0837$
 
-故泛点气速：$u_{\max}=C\left(\frac{\rho_L-\rho_V}{\rho_V}\right)^{0.5}=0.0258\times16.264=0.420\mathrm{m/s}$
+故泛点气速：$u_{\max}=C\left(\frac{\rho_L-\rho_V}{\rho_V}\right)^{0.5}=0.0258\times16.264=1.28 \mathrm{m/s}$
 
-3. 综合考虑，泛点气速取为更低的泛点气速$0.420\mathrm{m/s}$的75%，即$0.315\mathrm{m/s}$
-4. 精馏段塔径$D=\sqrt{\frac{4V_s}{\pi u}}=1.45\mathrm{m}$
+3. 综合考虑，泛点气速取为更低的泛点气速$1.28\mathrm{m/s}$的75%，即$0.96\mathrm{m/s}$
+4. 精馏段塔径$D=\sqrt{\frac{4V_s}{\pi u}}=0.83\mathrm{m}$
 
-取整为1600mm，此时操作气速为$4\times0.52/(\pi*1.6^2)=0.259\mathrm{m/s}$，塔横截面积为$8.042\mathrm{m^2}$。
+取整为1000mm，此时操作气速分别为$4\times0.519/(\pi*1^2)=0.661\mathrm{m/s}$，$4\times0.494/(\pi*1^2)=0.629\mathrm{m/s}$。塔横截面积为$8.042\mathrm{m^2}$。
 
 ## 8.4 塔板工艺结构尺寸的设计与计算
 
