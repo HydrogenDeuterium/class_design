@@ -73,6 +73,7 @@ $$
 \rho_V=\frac{\mathrm{p_mM_{V,m}}}{\mathrm{RT_m}}
    \rho_{V,1}=\frac{108.1\times79.35}{8.314\times(273.15+84.26)}\\
    =2.888\mathrm{kg/m^3}(精馏段)\\
+
    \rho_{V,2}=\frac{115.1\times96.28}{8.314\times(273.15+109.82)}\\
    =3.48\mathrm{kg/m^3}(提馏段)
 $$
@@ -115,11 +116,11 @@ muMix[A_,B_,x_]:=A*x+B*(1-x)
 - 精馏段气相摩尔流率：$V=(R+1)D=1.492\times45.61=68.05\mathrm{kmol/h}$
 - 精馏段气相体积流率：$V_R=\frac{VM_{V,m}}{\rho_{V,m}}=\frac{68.05\times79.35}{2.888}=1870\mathrm{m^3/h}=0.519\mathrm{m^3/s}$
 - 精馏段液相摩尔流率：$L=RD=0.492\times45.61=22.44\mathrm{kmol/h}$
-- 精馏段液相体积流率：$L_R=\frac{VM_{L,m}}{\rho_{L,m}}=\frac{22.44\times83.35}{845.95}=2.196\mathrm{m^3/h}=0.0006100\mathrm{m^3/s}$
+- 精馏段液相体积流率：$L_R=\frac{VM_{L,m}}{\rho_{L,m}}=\frac{22.44\times83.35}{845.95}=2.196\mathrm{m^3/h}=0.00061\mathrm{m^3/s}$
 - 冷凝器负荷：$2.0974\times10^6\mathrm{kJ/h}$
 
 - 提馏段气相摩尔流率：$V=68.05+(1-q)F=68.05\mathrm{kmol/h}$
-- 提馏段气相体积流率：$V_R=\frac{VM_{V,m}}{\rho_{V,m}}=\frac{68.05\times79.35}{3.48}=1780\mathrm{m^3/h}$
+- 提馏段气相体积流率：$V_R=\frac{VM_{V,m}}{\rho_{V,m}}=\frac{68.05\times79.35}{3.48}=1780\mathrm{m^3/h}=0.494\mathrm{m^3/s}$
 - 提馏段液相摩尔流率：$L=22.44+QF=84.71\mathrm{kmol/h}$
 - 提馏段液相体积流率：$L_R=\frac{VM_{L,m}}{\rho_{L,m}}=\frac{84.71\times100}{924.0}=10.394\mathrm{m^3/h}=0.00289\mathrm{m^3/s}$
 - 再沸器负荷：$2.59\times10^6\mathrm{kJ/h}$
