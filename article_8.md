@@ -64,13 +64,13 @@ Print[rhoMix[84.26,(0.993+0.728)/2],rhoMix[109.82,(0.993+0.728)/2]]
 压力较低，可以使用理想气体方程计算。
 
 - 平均压力：$108.1\mathrm{kPa}$，$115.1\mathrm{kPa}$
-- 平均分子量：$82.94\mathrm{kg/kmol}$，$96.39\mathrm{kg/kmol}$
+- 平均分子量：$79.35\mathrm{kg/kmol}$，$96.39\mathrm{kg/kmol}$
 - 平均温度：$84.26℃$，$109.82℃$
 
 $$
 \rho_V=\frac{\mathrm{p_mM_{V,m}}}{\mathrm{RT_m}}
-   \rho_{V,1}=\frac{108.1\times82.74}{8.314\times(273.15+84.26)}\\
-   =3.01\mathrm{kg/m^3}(精馏段)\\
+   \rho_{V,1}=\frac{108.1\times79.35}{8.314\times(273.15+84.26)}\\
+   =2.888\mathrm{kg/m^3}(精馏段)\\
    \rho_{V,2}=\frac{115.1\times96.39}{8.314\times(273.15+109.82)}\\
    =3.48\mathrm{kg/m^3}(提馏段)
 $$
