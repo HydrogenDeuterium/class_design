@@ -471,6 +471,25 @@ $$
 
 由8.2可知，精馏段操作气液比$V_R/L_R=85.2$，提馏段$V_R/L_R=204$。
 
+绘图代码如下：
 
+```WL
+wm := 8.299 - 33.877 L^(2/3)
+yf := 4.049 - 17.87 L^(2/3) - 2753 L^2
+ly := 0.102 + 0.0145 L^(2/3)
+op := 85.2 L
+yx := Line[{{9.55*10^(-4), 0}, {9.55*10^(-4), 8}}]
+ys := Line[{{0.0175, 0}, {0.0175, 8}}]
+Legends =Placed[{"雾沫夹带线", "液泛线", "漏液线", "操作线", "液相下限线", "液相上限线"}, Above];
+styleColor = {Blue, Red, Green, Purple, White, White};
+
+Plot[{wm, yf, ly, op, 0, 8.5}, {L, 0, 0.02},
+ PlotLabels -> Legends,
+ PlotStyle -> styleColor,
+ PlotRange -> Full,
+ Filling -> {3 -> {2}},
+ AspectRatio -> 1,
+ Epilog -> {{{Cyan, yx}, {Orange, ys}}}]
+```
 
 # 参考文献
