@@ -103,7 +103,6 @@ muMix[A_,B_,x_]:=A*x+B*(1-x)
 (muMix[A88,B88,0.728]+muMix[A131,A131,0.00288])/2
 ```
 
-<!-->
 <!--可得精馏段平均粘度为$0.311 \mathrm{mPa\cdot s}$，提馏段平均粘度为$0.256 \mathrm{mPa\cdot s}$
 晕 这小子自己算错了，舍入问题差了0.1-->
 
@@ -125,20 +124,22 @@ muMix[A_,B_,x_]:=A*x+B*(1-x)
 
 ## 8.3 塔径
 
-1. 取塔板间距$H_T=500\mathrm{mm}$，板上液层高度$H_L=60\mathrm{mm}$，则板上空间为$440\mathrm{mm}$。
+1. 取塔板间距$H_T=500\mathrm{mm}$，板上液层高度$H_L=47\mathrm{mm}$，则板上空间为$453\mathrm{mm}$。
 
 2. 以Smith法求空塔、泛点气速：
 
 对精馏段：
 
 $$
-\left(\frac{\mathrm{L}_{s}}{\mathrm{V}_{\mathrm{s}}}\right)\left(\frac{\rho_{\mathrm{L}}}{\rho_{\mathrm{V}}}\right)^{0.5}
-=\left(\frac{0.00061}{0.52}\right)\left(\frac{843.0}{3.001}\right)^{0.5}=0.0191
+\left(\frac{\mathrm{L_s}}{\mathrm{V_s}}\right)\left(\frac{\rho_{\mathrm{L}}}{\rho_{\mathrm{V}}}\right)^{0.5}
+=\left(\frac{0.00061}{0.519}\right)\left(\frac{845.95}{2.888}\right)^{0.5}=0.0201
 $$
 
-查表[^chart]可得，$C_{f20}=0.065$。负荷因子表面张力校正：$C_f=C_{f20}\left(\frac{\sigma}{20}\right)^{0.5}=0.0670$
+查表[^chart]可得，$C_{f20}=0.092$。负荷因子表面张力校正：$C_f=C_{f20}\left(\frac{\sigma}{20}\right)^{0.5}=0.0950$
 
-[^chart]:管国锋等.化工原理（第四版）[M].化学工业出版社，2015:360，图8-25vv
+[^chart]:管国锋等.化工原理（第四版）[M].化学工业出版社，2015:360，图8-25
+
+故泛点气速：$u_{\max}=C\left(\frac{\rho_L-\rho_V}{\rho_V}\right)^{0.5}=0.0258\times17.09=1.623\mathrm{m/2}$
 
 对提馏段：
 
@@ -149,11 +150,9 @@ $$
 
 查表[^chart]可得，$C_{f20}=0.025$。负荷因子表面张力校正：$C_f=C_{f20}\left(\frac{\sigma}{20}\right)^{0.5}=0.0258$
 
-综合两段，取更低值$C=0.0258$。
+故泛点气速：$u_{\max}=C\left(\frac{\rho_L-\rho_V}{\rho_V}\right)^{0.5}=0.0258\times16.264=0.420\mathrm{m/s}$
 
-故泛点气速：$u_{\max}=C\left(\frac{\rho_L-\rho_V}{\rho_V}\right)^{0.5}=0.0258\times16.264=0420\mathrm{m/2}$
-
-3. 取操作气速为泛点气速的75%，即$0.315\mathrm{m/s}$
+3. 综合考虑，泛点气速取为更低的泛点气速$0.420\mathrm{m/s}$的75%，即$0.315\mathrm{m/s}$
 4. 精馏段塔径$D=\sqrt{\frac{4V_s}{\pi u}}=1.45\mathrm{m}$
 
 取整为1600mm，此时操作气速为$4\times0.52/(\pi*1.6^2)=0.259\mathrm{m/s}$，塔横截面积为$8.042\mathrm{m^2}$。
