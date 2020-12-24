@@ -22,19 +22,19 @@
 
 进料板$x_F=0.728$,$y_F=\mathrm{p}_A^0*x_A/101.3=0.935$
 
-塔底$x_D=0.00288$,$y_D=\mathrm{p}_A^0*x_D/101.3=0.0111$
+塔底$x_D=0.00288$,$y_D=\mathrm{p}_A^0*x_D/101.3=0.0115$
 
 使用如下的代码计算平均分子量：
 
 ```Mathematica
 MeanMmass[x_]:=(x*78.11+(1-x)*112.61)
 Print@MeanMmass@{(0.968+0.728)/2,(0.993+0.935)/2}
-Print@MeanMmass@{(0.728+0.00288)/2,(0.935+0.0111)/2}
+Print@MeanMmass@{(0.728+0.00288)/2,(0.935+0.0115)/2}
 ```
 
 精馏段液相平均分子量$\mathrm{M_{V,m}}=83.35\mathrm{kg/kmol}$，气相平均分子量$\mathrm{M_{V,m}}=79.35\mathrm{kg/kmol}$
 
-提馏段液相平均分子量$\mathrm{M_{V,m}}=100.00\mathrm{kg/kmol}$，气相平均分子量$\mathrm{M_{V,m}}=96.29\mathrm{kg/kmol}$
+提馏段液相平均分子量$\mathrm{M_{V,m}}=100.00\mathrm{kg/kmol}$，气相平均分子量$\mathrm{M_{V,m}}=96.28\mathrm{kg/kmol}$
 
 ### 8.1.4 液相平均密度
 
@@ -55,23 +55,25 @@ rhoMix[t_,x_]:=1/(x/rhoA[t]+(1-x)/rhoB[t])
 Print[rhoMix[84.26,(0.993+0.728)/2],rhoMix[109.82,(0.993+0.728)/2]]
 ```
 
-<!-->可以得到，精馏段平均密度$\rho_{L,m,精}=837.3\mathrm{kg/m^3}$，提馏段平均密度$\rho_{L,m,提}=801.1\mathrm{kg/m^3}$<-->
+<!--可以得到，精馏段平均密度$\rho_{L,m,精}=837.3\mathrm{kg/m^3}$，提馏段平均密度$\rho_{L,m,提}=807.1\mathrm{kg/m^3}$
+这里我密度计算与他有小区别，会导致结果微微偏小。
+-->
 
-可以得到，精馏段平均密度$\rho_{L,m,精}=845.95\mathrm{kg/m^3}$，提馏段平均密度$\rho_{L,m,提}=924.0\mathrm{kg/m^3}$
+可以得到，精馏段平均密度$\rho_{L,m,精}=845.95\mathrm{kg/m^3}$，提馏段平均密度$\rho_{L,m,提}=815.6 \mathrm{kg/m^3}$
 
 ### 8.1.5 气相平均密度
 
 压力较低，可以使用理想气体方程计算。
 
 - 平均压力：$108.1\mathrm{kPa}$，$115.1\mathrm{kPa}$
-- 平均分子量：$79.35\mathrm{kg/kmol}$，$96.39\mathrm{kg/kmol}$
+- 平均分子量：$79.35\mathrm{kg/kmol}$，$96.28\mathrm{kg/kmol}$
 - 平均温度：$84.26℃$，$109.82℃$
 
 $$
 \rho_V=\frac{\mathrm{p_mM_{V,m}}}{\mathrm{RT_m}}
    \rho_{V,1}=\frac{108.1\times79.35}{8.314\times(273.15+84.26)}\\
    =2.888\mathrm{kg/m^3}(精馏段)\\
-   \rho_{V,2}=\frac{115.1\times96.39}{8.314\times(273.15+109.82)}\\
+   \rho_{V,2}=\frac{115.1\times96.28}{8.314\times(273.15+109.82)}\\
    =3.48\mathrm{kg/m^3}(提馏段)
 $$
 
