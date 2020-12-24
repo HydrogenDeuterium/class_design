@@ -104,22 +104,24 @@ muMix[A_,B_,x_]:=A*x+B*(1-x)
 ```
 
 <!-->
-可得精馏段平均粘度为$0.311 \mathrm{mPa\cdot s}$，提馏段平均粘度为$0.256 \mathrm{mPa\cdot s}$
-晕 这小子自己算错了，舍入问题差了0.1
-<-->
+<!--可得精馏段平均粘度为$0.311 \mathrm{mPa\cdot s}$，提馏段平均粘度为$0.256 \mathrm{mPa\cdot s}$
+晕 这小子自己算错了，舍入问题差了0.1-->
+
 可得精馏段平均粘度为$0.312 \mathrm{mPa\cdot s}$，提馏段平均粘度为$0.256 \mathrm{mPa\cdot s}$
 
 ## 8.2 气液负荷
 
 - 精馏段气相摩尔流率：$V=(R+1)D=1.492\times45.61=68.05\mathrm{kmol/h}$
-- 精馏段气相体积流率：$V_R=\frac{VM_{V,m}}{\rho_{V,m}}=\frac{68.05\times82.49}{3.01}=1875\mathrm{m^3/h}=0.52\mathrm{m^3/s}$
+- 精馏段气相体积流率：$V_R=\frac{VM_{V,m}}{\rho_{V,m}}=\frac{68.05\times79.35}{2.888}=1870\mathrm{m^3/h}=0.519\mathrm{m^3/s}$
 - 精馏段液相摩尔流率：$L=RD=0.492\times45.61=22.44\mathrm{kmol/h}$
-- 精馏段液相体积流率：$L_R=\frac{VM_{L,m}}{\rho_{L,m}}=\frac{22.44\times79.56}{843.0}=2.196\mathrm{m^3/h}=0.0006100\mathrm{m^3/s}$
+- 精馏段液相体积流率：$L_R=\frac{VM_{L,m}}{\rho_{L,m}}=\frac{22.44\times83.35}{845.95}=2.196\mathrm{m^3/h}=0.0006100\mathrm{m^3/s}$
+- 冷凝器负荷：$2.0974\times10^6\mathrm{kJ/h}$
 
 - 提馏段气相摩尔流率：$V=68.05+(1-q)F=68.05\mathrm{kmol/h}$
 - 提馏段气相体积流率：$V_R=1875\mathrm{m^3/h}=0.52\mathrm{m^3/s}$
 - 提馏段液相摩尔流率：$L=22.44+QF=84.71\mathrm{kmol/h}$
 - 提馏段液相体积流率：$L_R=\frac{VM_{L,m}}{\rho_{L,m}}=\frac{84.71\times100}{924.0}=9.17\mathrm{m^3/h}=0.00255\mathrm{m^3/s}$
+- 再沸器负荷：$2.59\times10^6\mathrm{kJ/h}$
 
 ## 8.3 塔径
 
