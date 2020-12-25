@@ -1,6 +1,4 @@
 <h1 style="text-align:center">设计目录</h1>
-[toc]
-
 @toc
 
 <div STYLE="page-break-after: always;"></div>
@@ -312,7 +310,7 @@ $$
 
 ### 6.2.1 全塔效率$\mathrm{E_T}$
 
-选用Drickamer 和Bradford的全塔效率ET与液体粘度μL关联式：$ET=0.17-0.616\lg μ_m$。该式适用于液相黏度0.07~1.4 mPa·s的烃类物系，式中μm为全塔平均温度下以进料组成表示的平均黏度。塔的平均温度为（80.36+131.41）/2=105.94°C（取塔顶、塔底温度的算术平均值），此平均温度下：
+选用Drickamer 和Bradford的全塔效率$E_T$与液体粘度$\mu_L$关联式：$ET=0.17-0.616\lg μ_m$。该式适用于液相黏度0.07~1.4 mPa·s的烃类物系，式中μm为全塔平均温度下以进料组成表示的平均黏度。塔的平均温度为（80.36+131.41）/2=105.94°C（取塔顶、塔底温度的算术平均值），此平均温度下：
 
 $$
 \mu_A=0.246mPa·s\qquad \mu_B=0.352mPa·s
@@ -794,7 +792,7 @@ $$
    x=D/2-W_d-W_S=0.8-0.224-0.100=0.675\mathrm{mm}
    $$
 
-   因此开孔区面积$A_a=2\left[x \sqrt{r^2-x^2}+\frac\pi{180} \arcsin\left(\frac\pi r\right) \right]\\$
+   因此开孔区面积$A_a=2\left[x \sqrt{r^2-x^2}+\frac\pi{180} \arcsin\left(\frac\pi r\right) \right]$
    $=2\left[0.226+\frac\pi{180}0.44^2\arcsin\left(\frac{0.285}{0.44} \right) \right]$
    $=0.46\mathrm{m^2}$
 
@@ -839,8 +837,7 @@ $h_L=\beta(h_w+h_{ow})=\beta H_L$，其中$H_L$为板上的液层高度。
 
 对于单流型塔，有效截面的空气速$u_a=\frac{V_{R,s}}{A_T-2A_f}=\frac{0.539}{0.785-2\times0.707}={0.806,0.768}\mathrm{m\cdot s^{-1}}$
 
-因此，动能因子$
-F_a=u_a\sqrt{\rho_V}$
+因此，动能因子$F_a=u_a\sqrt{\rho_V}$
 
 $$
 F_{a,1}=0.806\times \sqrt{2.89}=1.37\\
@@ -882,9 +879,7 @@ $$
 
 取板上泡沫层厚度为液层的2.5倍。
 
-则雾沫夹带量$e_V=\frac{5.7\times10^{-6}}{\sigma_{m}}\cdot \left(
-   \frac{u_n}{H_T-H_f}
-\right)$，故有：
+则雾沫夹带量$e_V=\frac{5.7\times10^{-6}}{\sigma_{m}}\cdot \left(   \frac{u_n}{H_T-H_f}\right)$，故有：
 
 $$
 e_{v,1}=\frac{5.7\times10^{-6}}{21.32\times10^{-3}}\cdot
@@ -892,7 +887,7 @@ e_{v,1}=\frac{5.7\times10^{-6}}{21.32\times10^{-3}}\cdot
    \frac{6.65}{0.5-2.5\times0.047}
 \right)^{3.2}\\
 =0.00208\mathrm{kg(Liquid)\cdot kg^{-1}(Gas)}\\
-
+\\
 e_{v,2}=\frac{5.7\times10^{-6}}{20.85\times10^{-3}}\cdot
 \left(
    \frac{6.33}{0.5-2.5\times0.087}
@@ -913,7 +908,7 @@ $$
 
 $$
 h_{\sigma,1}=\frac{4\times10^{-3}\times21.32}{845.95\times9.81\times 0.004}=0.00206\mathrm{m}\\
-
+\\
 h_{\sigma,2}=\frac{4\times10^{-3}\times20.85}{815.6\times9.81\times 0.004}=0.00208\mathrm{m}\\
 $$
 
@@ -921,7 +916,7 @@ $$
 
 $$
 u_{om,1}=4.4\times0.78\sqrt{(0.0056+0.13\times0.047-0.00206)845.95/2.89}\\=5.77\mathrm{m\cdot s^{-1}}\\
-
+\\
 u_{om,1}=4.4\times0.78\sqrt{(0.0056+0.13\times0.087-0.00208)815.6/3.48}\\=5.91\mathrm{m\cdot s^{-1}}\\
 $$
 
@@ -936,7 +931,7 @@ $$
 $$
 \Sigma H_{f,1}=0.153\left(\frac{0.00061}{0.7\times0.0218}\right)
 =0.00616\mathrm{m}\\
-
+\\
 \Sigma H_{f,1}=0.153\left(\frac{0.00289}{0.7\times0.0375}\right)
 =0.0168\mathrm{m}
 $$
@@ -1036,7 +1031,7 @@ $$
 $$
 0.04171+0.9772 L_1^\frac{2}{3}+150.6L_1^2+0.0547 V_1=0.2632\\
 0.04171+0.9772 L_2^\frac{2}{3}+150.6L_2^2+0.0566 V_2=0.2632\\
-
+\\
 V_1 = 4.049 - 17.87 L_1^\frac{2}{3} - 2753 L_1^2\\
 V_2 = 3.913 - 17.27 L_2^\frac{2}{3} - 2660 L_2^2\\
 $$
