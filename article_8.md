@@ -391,26 +391,39 @@ e_V=\frac{5.7\times10^{-6}}{\sigma_{m}}\cdot \left(
 \right)^{3.2}
 $$
 
-其中，$u_n=\frac{V_{R,s}}{A_T-A_F}=0.545V_{R,s}$。
+其中，$u_n=\frac{V_{R,s}}{A_T-A_F}=0.621V_{R,s}$。
 
 取塔上泡沫层厚度$H_f$为板上液层厚度的2.5倍，则：
 
 <!--下面算出来的东西只和L_W有关，我是这么理解的-->
 
 $$
-\mathrm{H}_{\mathrm{f}} =2.5\mathrm{H}_{\mathrm{L}}=2.5\left(
-   \mathrm{h}_{\mathrm{w}}+\mathrm{h}_{\mathrm{ow}}\right)
-   =2.5 \times\left[0.0264+0.00284\left(\frac{3600 \mathrm{L}_{\mathrm{R,s}}}{1.12}\right)^{\frac23}\right]
+\mathrm{H_{f}} =2.5\mathrm{H}_{\mathrm{L}}=2.5\left(
+   \mathrm{h}_{\mathrm{w}}+\mathrm{h}_{\mathrm{ow}}\right)\\
+   =2.5 \times\left[{0.04085, 0.06933}+0.00284\left(\frac{3600 \mathrm{L}_{\mathrm{R,s}}}{0.7}\right)^{\frac23}\right]
    \\
-   =0.121+1.546L^{\frac23}\mathrm{m}
+   =0.2043+0.4231L_1^{\frac23}\mathrm{m}\\
+   =0.3467+0.4231L_2^{\frac23}\mathrm{m}
 $$
 
-取$e=0.1$，化简有:
+取$e=0.1$:
 
 $$
-V_1=8.299-33.877 L_1^{\frac23}\\
-\\\\
-V_2=8.114-33.112 L_2^{\frac23}
+\left(\frac{0.621V}{{0.2957,0.3467}-0.4231L^{\frac{2}{3}}}\right)^{3.2}=\frac{{21.32,20.85}\times10^2}{5.7}={373.947, 365.741}
+$$
+
+$$
+\frac{0.621V}{{0.2957,0.3467}-0.4231L^{\frac{2}{3}}}={6.368, 6.324}
+$$
+
+$$
+\frac{V}{{0.4762,0.5583} - 0.6813 L^{\frac{2}{3}}}={10.255, 10.184}
+$$
+
+最终可得：
+$$
+V_1=4.88319 - 6.98707 L_1^{\frac{2}{3}}\\
+V_2=5.68565 - 6.93856 L_2^{\frac{2}{3}}
 $$
 
 ### 8.6.2 液泛线（气相负荷上限线）
